@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Tobi Lehman | About"
+title: "About"
 date: 2012-07-08 13:01
 comments: true
 sharing: true

@@ -3,7 +3,7 @@ layout: post
 title: "Simplifying client-side web development with Angular.js"
 date: 2012-07-08 15:50
 comments: true
-categories: 
+categories: [javascript, google]
 ---
 
 For dealing with client-side web development there are a lot of ways to bind data to elements to HTML. However, none have stood out quite as well as [Angular.js](http://angular.js) from Google. There is a [good screencast](http://www.youtube.com/watch?v=uFTFsKmkQnQ&feature=player_embedded) giving a side-by-side comparison of a "hello name" app done in jQuery and then in Angular.

@@ -36,7 +36,8 @@ Using the Latinizer example, let's start with the view:
         <h1>{{latinizeFirstName(person)}}</h1>
     </div>
 
-    Note: the rules being used here are from <a href="http://www.ehow.com/how_7378149_convert-english-first-name-latin.html">this page</a>.
+    Note: the rules being used here are from 
+		<a href="http://www.ehow.com/how_7378149_convert-english-first-name-latin.html">this page</a>.
 </html>
 ```
 

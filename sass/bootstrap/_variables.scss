@@ -21,8 +21,8 @@ $white:                 #fff !default;
 
 // Accent colors
 // -------------------------
-$blue:                  #049cdb !default;
-$blueDark:              #0064cd !default;
+$blue:                  #333333 !default;
+$blueDark:              #000000 !default;
 $green:                 #46a546 !default;
 $red:                   #9d261d !default;
 $yellow:                #ffc40d !default;
@@ -47,12 +47,12 @@ $linkColorHover:        darken($linkColor, 15) !default;
 // -------------------------
 $baseFontSize:          13px !default;
 $baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$baseLineHeight:        18px !default;
+$baseLineHeight:        16px !default;
 $altFontFamily:         Georgia, "Times New Roman", Times, serif !default;
 
 $headingsFontFamily:    inherit !default; // empty to use BS default, @baseFontFamily
-$headingsFontWeight:    bold !default;    // instead of browser default, bold
-$headingsColor:         inherit !default; // empty to use BS default, @textColor
+$headingsFontWeight:    inherit !default;    // instead of browser default, bold
+$headingsColor:         $grayDark !default; // empty to use BS default, @textColor
 
 
 // Tables
@@ -140,8 +140,8 @@ $hrBorder:                $grayLighter !default;
 // Navbar
 // -------------------------
 $navbarHeight:                    40px !default;
-$navbarBackground:                #33569c !default;
-$navbarBackgroundHighlight:       #56addf !default;
+$navbarBackground:                #666666 !default;
+$navbarBackgroundHighlight:       #555555 !default;
 
 $navbarText:                      $grayLighter !default;
 $navbarLinkColor:                 $grayLighter !default;

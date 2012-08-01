@@ -45,10 +45,9 @@ $linkColorHover:        darken($linkColor, 15) !default;
 
 // Typography
 // -------------------------
-$baseFontSize:          14px !default;
-//$baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$baseFontFamily:        "Trebuchet MS", "Arial", sans-seriff !default;
-$baseLineHeight:        16px !default;
+$baseFontSize:          13px !default;
+$baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$baseLineHeight:        17px !default;
 $altFontFamily:         Georgia, "Times New Roman", Times, serif !default;
 
 $headingsFontFamily:    inherit !default; // empty to use BS default, @baseFontFamily

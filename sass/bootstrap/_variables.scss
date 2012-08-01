@@ -45,8 +45,9 @@ $linkColorHover:        darken($linkColor, 15) !default;
 
 // Typography
 // -------------------------
-$baseFontSize:          13px !default;
-$baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$baseFontSize:          14px !default;
+//$baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$baseFontFamily:        "Trebuchet MS", "Arial", sans-seriff !default;
 $baseLineHeight:        16px !default;
 $altFontFamily:         Georgia, "Times New Roman", Times, serif !default;
 

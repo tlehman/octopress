@@ -7,7 +7,7 @@ sharing: false
 footer: false
 ---
 
-## A PowerShell to Unix Rosetta Stone
+## A Unix to PowerShell Rosetta Stone
 This is written mostly for those with a Unix background that would like
 to work in a command-line environment on Windows. The following is a
 mapping from UNIX commands to [PowerShell

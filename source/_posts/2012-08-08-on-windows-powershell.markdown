@@ -46,4 +46,4 @@ command-line interfaces on Unix, I wanted to make a mapping from common Unix com
 to PowerShell cmdlets. I know there are already a few [articles](http://windows-powershell-scripts.blogspot.com/2009/06/unix-equivalents-in-powershell.html) about this, but I wanted to make a quick reference table that others could contribute to on GitHub.
 
 
-I give you: [A PowerShell to Unix Rosetta Stone](http://tobilehman.com/cli)
+I give you: [A Unix to PowerShell Rosetta Stone](http://tobilehman.com/cli)

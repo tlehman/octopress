@@ -7,12 +7,12 @@ sharing: false
 footer: false
 ---
 
-# A PowerShell to Unix Rosetta Stone
+## A PowerShell to Unix Rosetta Stone
 This is written mostly for those with a Unix background that would like
 to work in a command-line environment on Windows. The following is a
 mapping from UNIX commands to [PowerShell
 cmdlets](http://tobilehman.com/blog/2012/08/08/on-windows-powershell).
-
+<br>
 
 <table border="1" cellpadding="2" cellspacing="0" width="100%">
 	<tr>
@@ -70,4 +70,6 @@ cmdlets](http://tobilehman.com/blog/2012/08/08/on-windows-powershell).
 	</tr>
 </table>
 
+<br><br>
 
+*If you would like to add to or edit this table, [fork this](https://github.com/tlehman/octopress/) repository on GitHub and edit [this file](https://github.com/tlehman/octopress/blob/master/source/cli/index.markdown), and then submit a [pull request](https://help.github.com/articles/using-pull-requests/)*

@@ -9,4 +9,4 @@ I am a programmer and a (late-blooming) math enthusiast. I grew up in the beauti
 
 I work as a Programmer/Analyst at [Resource Data Inc.](http://www.resdat.com/), and I have a B.S. in Mathematics from [Portland State University](http://pdx.edu).
 
-If you would like to contact me, send me an email at `my first name` dot `my last name` at gmail dot com.
+If you would like to contact me, send me an email at `my first name` dot `my last name` at gmail dot com. Or follow me on twitter: [@habitmelon](http://twitter.com/habitmelon)

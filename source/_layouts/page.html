@@ -5,7 +5,7 @@ layout: default
 {% if page.sidebar == false %}
 <article role="article" class="span12">
 {% else %}
-<article role="article" class="span9">
+<article role="article">
 {% endif %}
   {% if page.title %}
   <header class="page-header">
@@ -33,7 +33,7 @@ layout: default
     </footer>
   {% endunless %}
 </article>
-{% unless page.sidebar == false %}
+{% unless page.sidebar == false or true %}
 <aside class="sidebar-nav span3">
   {% if site.page_asides.size %}
     {% include_array page_asides %}

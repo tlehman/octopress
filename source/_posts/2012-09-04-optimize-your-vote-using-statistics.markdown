@@ -47,4 +47,49 @@ Then, given the set of near ideal matches, I can take into account which
 is most likely to win, and cast my vote accordingly.
 
 So, let's get to some statistics, since my title promised it, and
-because
+because we can use this to actually calculate who you should vote for.
+In fact, if a good enough model can be generated to this effect, perhaps
+we could replace voting for a single individual with taking a test, and
+having a computer calculate your vote for you. That would be a much
+better way to have the candidate reflect the majority views in the
+United States.
+
+Let's start with some definitions, the **expected value** of a random
+variable X, where X can take on any of the n values {x<sub>1</sub>, ... x<sub>n</sub>} 
+with corresponding probabilities {p<sub>1</sub>, ... p<sub>n</sub>}, is
+just the sum of those probabilities, times the corresponding value:
+
+<div markdown="0">
+  \[ E(X) = \sum_{i=1}^n p_ix_i \]
+</div>
+
+So the expected value is a sort of weighted average over all of the
+values the random variable could take on. The part of this I will be
+using is the p<sub>i</sub> factor. Given this definition, there
+naturally follows an "expected maximum", denoted Emax(X).
+
+<div markdown="0">
+  \[ Emax(X) = \max\{ p_ix_i \}_{i=1}^n \]
+</div>
+
+I make a further modification to
+this model and use the **issues coefficient** c<sub>i</sub>. For example, I was an 83% match with Gary Johnson, so if Johnson is represented by the value x<sub>i</sub>, then c<sub>i</sub> = 0.83.
+
+So, using this model we have two values that need to be accounted
+for before we can decide who to vote for, there is p<sub>i</sub>, which is the probability that the i-th candidate will win, and then there is c<sub>i</sub>, the degree to which the voter agrees with the candidate on the relevant issues. Since we don't know who is going to win, we set all x<sub>i</sub> = 1, and we can ignore that altogether, so the expected maximum becomes:
+
+<div markdown="0">
+  \[ Emax(X) = \max\{ c_ip_i \}_{i=1}^n \]
+</div>
+
+Now, in my case, I have all of the four c<sub>i</sub> values, but I don't
+have the p<sub>i</sub> values. To find these values, we could start with
+the number of electoral representatives per party. I have not been able to find
+this data, but If I did, I could calculate the perfect choice of a vote,
+one that would be balanced between idealism and pragmatism.
+
+Note: If any of you can find data on the number of electoral
+representatives per political party, I will happily make this into an
+app that will calculate a suggestion based on this model. It will take
+your [isidewith.com](http://isidewith.com) data and then weigh that with
+the proportion of electoral votes for the corresponding party.

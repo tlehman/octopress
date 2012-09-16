@@ -1,0 +1,32 @@
+[{ "company": "HBW Leads", 
+   "titles": ["IT Specialist", "DBA", "Programmer"],
+   "technologies": ["C#", "T-SQL", "IIS", "ASP.NET WebForms", "VBA in Excel"],
+   "start_date" : "2005 October",
+   "end_date" : "2010 January"
+   }, 
+
+{ "company": "Portland State University: Academic & Research Computing", 
+   "titles": ["Programmer"],
+   "technologies": ["Python", "Apache", "WSGI", "Trac"],
+   "start_date" : "2009 July",
+   "end_date" : "2009 September"
+   },
+
+{ "company": "Portland State University: Teuscher Lab", 
+   "titles": ["Programmer", "Research Assistant"],
+   "technologies": ["CUDA C", "C++", "Matlab"],
+   "start_date" : "2011 January",
+   "end_date" : "2011 September"},
+
+{ "company": "Ascent Services Group (Worked for ADP)", 
+  "titles": ["Quality Assurance Technician"],
+  "technologies": ["Mantis Bug Tracker", "VMWare"],
+  "start_date" : "2010 May",
+  "end_date" : "2010 September"}, 
+
+{ "company": "Resource Data Inc.", 
+  "titles": ["Programmer", "Analyst"],
+  "technologies": ["C#", "JavaScript", "jQuery", "T-SQL", "LINQ", "ASP.NET MVC", "ASP.NET WebForms", "Ruby", "Ruby on Rails", "Apache", "nginx", "IIS"],
+  "start_date" : "2011 November",
+  "end_date" : "2012 September"}
+]

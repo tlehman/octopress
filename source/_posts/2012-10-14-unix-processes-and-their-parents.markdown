@@ -76,7 +76,7 @@ Finally, GraphViz has several commands for rendering graphs in various ways. The
 
 ``` sh 
 ~ > echo "digraph proc { `ps axo ppid,pid | sed "s/\b / -> /g" | grep -v "PID"` } " >> proc.dot
-~ > circo proc.dat -Tpng >> radial_proc.png
+~ > circo proc.dot -Tpng >> radial_proc.png
 ```
 
 Here's the radial layout: 

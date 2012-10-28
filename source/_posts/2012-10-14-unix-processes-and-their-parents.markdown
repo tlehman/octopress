@@ -10,7 +10,7 @@ I am reading Jesse Storimer's fantastic little book ["Working with Unix Processe
 
 When a Unix process is born, it is a literal copy of it's parent process. For example, if I am typing _ls_ into a bash prompt, the bash process spawns a copy of itself using the _fork_ system call. The parent process (bash) has an id which is associated with the child process (ls). Using the Unix _ps_ command, you can see the parent process id of every process on the system.
 
-The only process that has no parent is _sched_, it has process id zero. The idea I had was to make a visualization of this branching tree of Unix processes. I am currently running Debian GNU/Linux, a Unix variant. I came up with this one-liner that shows the (parent id -> child id) relation:
+The only process that has no parent is _sched_, it has process id zero. The idea I had was to make a visualization of this branching tree of Unix processes. I am currently running Debian GNU/Linux, a Unix-like operating system. I came up with this one-liner that shows the (parent id -> child id) relation:
 
 ```sh
 ps axo ppid,pid | sed "s/\b / -> /g" | grep -v "PID"

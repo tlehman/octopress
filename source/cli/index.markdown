@@ -7,6 +7,8 @@ sharing: false
 footer: false
 ---
 
+[Posts on this blog about CLI stuff](/blog/categories/cli/)
+
 ## A Unix to PowerShell Rosetta Stone
 This is written mostly for those with a Unix background that would like
 to work in a command-line environment on Windows. The following is a

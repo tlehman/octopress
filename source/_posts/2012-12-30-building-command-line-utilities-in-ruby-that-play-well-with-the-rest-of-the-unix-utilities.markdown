@@ -39,7 +39,7 @@ I wrote a gem called wordfreq that computed the word or character frequencies (i
 
 The thing I got hung up on was the Errno::EPIPE exception in Ruby. When I wrote wordfreq and then piped its output to `head`, the Errno::EPIPE exception was thrown. I thought I was doing something wrong, but it turned out that I just needed to handle that exception, since utilities like `head` and `tail` stop reading after 10 lines. When `head` or `tail` stops reading, Ruby throws an Errno::EPIPE exception. The way I solved the problem was to handle the Errno::EPIPE exception by breaking out of the main loop.
 
-Here is the github repository with the source code and documentation: https://github.com/tlehman/wordfreq, or if you want to start using it, just run 
+Here is the github repository with the source code and documentation: [https://github.com/tlehman/wordfreq](https://github.com/tlehman/wordfreq), or if you want to start using it, just run 
 
 ```
 gem install wordfreq

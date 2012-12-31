@@ -6,7 +6,7 @@ comments: true
 categories: [cli, unix, programming, ruby] 
 ---
 
-The [Unix pipeline](http://en.wikipedia.org/wiki/Pipeline_(Unix) is a beautiful thing, as long as Standard Input and Standard Output are handled correctly, programs can be kept small and predictable. Getting any sort of complex functionality is simply a matter of composing the appropriate command line utilties via the Unix pipeline.
+The [Unix pipeline](http://en.wikipedia.org/wiki/Pipeline_%28Unix%29) is a beautiful thing, as long as Standard Input and Standard Output are handled correctly, programs can be kept small and predictable. Getting any sort of complex functionality is simply a matter of composing the appropriate command line utilties via the Unix pipeline.
 
 When taking [Coursera's Cryptography I class](https://www.coursera.org/course/crypto), I learned about how all substitution ciphers could be cracked using character frequency analysis. Basically, in English plaintext, there is a very non-uniform distribution over the alphabet, as you can see here: 
 

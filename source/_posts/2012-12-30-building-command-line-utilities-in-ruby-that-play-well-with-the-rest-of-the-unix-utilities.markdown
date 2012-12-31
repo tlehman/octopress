@@ -33,10 +33,21 @@ Buildling a gem is very easy, one just has to run
 Initializating git repo in /Users/tobi/foo
 ```
 
-Then, cd into the `foo` directory, hack away on the code, and then do a `rake release`, which publishes to rubygems.org.
+Then, cd into the `foo` directory, hack away on the code, and then do a `rake release`, which publishes to rubygems.org. Then, anyone else can just run `gem install foo` and start using your program.
 
-Anyway, the thing I got hung up on was the Errno::EPIPE exception in Ruby. When I wrote the `wordfreq` gem and then piped its output to `head`, the Errno::EPIPE exception was thrown. I thought I was doing something wrong, but it turned out that I just needed to handle that exception, since utilities like `head` and `tail` stop reading after 10 lines, so we don't have to handle every possible situation. When `head` or `tail` stops reading, Ruby throws an Errno::EPIPE exception, which is enough for now. The way I solved the problem was to handle the case when the Errno::EPIPE exception was thrown.
- 
-When that exception is thrown, it is still not the end of the world. Acccording to the participants, yes. Anyway, working with the Unix pipeline required that I cleared what I was doing to the neighbor level.
+I wrote a gem called wordfreq that computed the word or character frequencies (if the -c flag was given), this was a quick way to verify the distribution above for the alphabet.
 
-Ultimately, I finished after I realized I didn't need to see, since I could see the fools list after fee. And I see nothing after someone sees me.
+The thing I got hung up on was the Errno::EPIPE exception in Ruby. When I wrote wordfreq and then piped its output to `head`, the Errno::EPIPE exception was thrown. I thought I was doing something wrong, but it turned out that I just needed to handle that exception, since utilities like `head` and `tail` stop reading after 10 lines. When `head` or `tail` stops reading, Ruby throws an Errno::EPIPE exception. The way I solved the problem was to handle the Errno::EPIPE exception by breaking out of the main loop.
+
+Here is the github repository with the source code and documentation: https://github.com/tlehman/wordfreq, or if you want to start using it, just run 
+
+```
+gem install wordfreq
+```
+
+Publishing gems is very easy with Bundler, and it is a great way to make small command line utilities. But make sure you respond appropriately when pipes close, that way your command lime tool will mesh nicely with the rest of the Unix tools.
+
+## Further Reading:
+
+ - [Writing Ruby Scripts That Respect Pipelines (J. Storimer)](http://jstorimer.com/2011/12/12/writing-ruby-scripts-that-respect-pipelines.html)
+ - [Speaking Unix: Peering into Pipes (M. Streicher)](http://www.ibm.com/developerworks/aix/library/au-spunix_pipeviewer/)

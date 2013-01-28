@@ -30,7 +30,7 @@ For the problem I was trying to solve, I could have saved some time by digging t
 NOTE: For the character count feature, all I have to do is output one character per line, then I can insert that into the pipeline to get the desired output: 
 
 ``` bash
-(FILENAME'S CONTENTS 1 CHARACTER PER LINE) | sed 's/[^a-zA-Z0-9]//g' | tr '[A-Z]' '[a-z]' | sort | uniq -c | sort -nr | head
+(CONTENTS OF FILENAME, 1 CHARACTER PER LINE) | sed 's/[^a-zA-Z0-9]//g' | tr '[A-Z]' '[a-z]' | sort | uniq -c | sort -nr | head
 ```
 
 I'm not sure how to do this at the moment, I think `awk` can do it pretty simply, I'll read the manpages, but for now I have to get to work.

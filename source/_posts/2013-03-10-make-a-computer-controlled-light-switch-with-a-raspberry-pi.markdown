@@ -13,7 +13,7 @@ To build a computer-controlled light switch, you will need:
 
 The powerswitch tail looks like an extension cord with some holes in it to wire it into your own circuit. Connect the powerswitch to the raspberry pi as in the image below (on is connected to pin 23):
 
-{%img images/blogimg/rasbpi_adafruit.jpg %}
+{% img /images/blogimg/rasbpi_adafruit.jpg %}
 
 Then, the following python program will allow you to type `./switch on` or `./switch off` from the command line as root.
 

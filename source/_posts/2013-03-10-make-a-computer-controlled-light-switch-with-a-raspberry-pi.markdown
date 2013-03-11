@@ -1,0 +1,49 @@
+---
+layout: post
+title: "Make a computer-controlled light switch with a Raspberry Pi"
+date: 2013-03-10 16:40
+comments: true
+categories: [diy, make, programming, python]
+---
+
+To build a computer-controlled light switch, you will need:
+
+ - [Raspberry Pi](http://www.raspberrypi.org/) ($35)
+ - [Adafruit Powerswitch Tail 2](http://www.adafruit.com/products/268) ($25)
+
+The powerswitch tail looks like an extension cord with some holes in it to wire it into your own circuit. Connect the powerswitch to the raspberry pi as in the image below (on is connected to pin 23):
+
+{%img images/blogimg/rasbpi_adafruit.jpg %}
+
+Then, the following python program will allow you to type `./switch on` or `./switch off` from the command line as root.
+
+``` python
+#!/usr/bin/env python
+# Turn switch on/off
+# by tlehman
+
+import RPi.GPIO as io
+import sys
+
+io.setmode(io.BCM)
+pin = 23
+io.setwarnings(False)
+io.setup(pin, io.OUT)                 # set pin 23 as output
+
+if len(sys.argv) > 1:
+    state = sys.argv[1]               # get command line argument ('on' or 'off')
+    io.output(pin, state == 'on')     # if state is on, let pin 23 connect the circuit, otherwise break the circuit
+else:
+    print("Usage: ")
+    print("  ./switch (on|off)")
+```
+
+To run this, carefully plug in a lamp (or other appliance that uses a standard 120V U.S. outlet), then 
+
+``` bash
+sudo su
+./switch on
+./switch off
+```
+
+

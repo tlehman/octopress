@@ -46,4 +46,9 @@ sudo su
 ./switch off
 ```
 
+Here is a video of the light being switched off and then back on, not very exciting, but it works: 
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/IO_BZ0mRYyQ" frameborder="0" allowfullscreen></iframe>
+
+This on it's own is not very useful or amusing, but this can easily be tied together with any API or command line utility. For example, I plan to connect this to our continuous integration server at work so that every time the tests fail, the switch turns some lights off, this could be achieved with a cron job, or perhaps a hook on Jenkins that sends a signal to the raspberry pi, there are so many possbilities.
 

@@ -40,7 +40,7 @@ values.
 
 In scheme, the above list could be transliterated as:
 
-```Scheme
+```scheme
 	(+ (cc a (- n 1))
 	   (cc (- a d) n))
 ```
@@ -88,20 +88,86 @@ If the root's id is `s`, then a typical node would be labeled
 something like `sllrrl`. Starting at the root, you can find the node
 by going left two times, right two times, and then left.
 
-The full source of this tree-generating code `cc-graph` can be found 
-[here](https://github.com/tlehman/sicp-exercises/blob/master/count-change.scm#L29). 
+Here is the full source of the tree-generating code `cc-graph`:
+
+```scheme
+
+(define (cc-graph amount kinds-of-coins)
+
+  (define display-node (lambda (label amount kinds-of-coins) 
+                         (begin
+                           (display "  ")
+                           (display label)
+                           (display " [label=\"")
+                           (display `(cc ,amount ,kinds-of-coins))
+                           (display "\"];")
+                           (newline))))
+
+  (define display-edge (lambda (a b) 
+                         (begin
+                           (display "  ")
+                           (display a)
+                           (display " -> ")
+                           (display b)
+                           (display ";")
+                           (newline))))
+
+  (define base-case (lambda (amount kinds-of-coins)
+                      (or (< amount 0)
+                          (= kinds-of-coins 0) 
+                          (= amount 0))))
+
+  (define left (lambda (label)
+                  (string-append label "l")))
+
+  (define right (lambda (label)
+                  (string-append label "r")))
+
+
+  ; label is the unique label of the function invocation
+  (define (recurse label amount kinds-of-coins)
+    (if (base-case amount kinds-of-coins)
+        (display-node label amount kinds-of-coins)
+        (begin
+          (display-node label amount kinds-of-coins)
+          (display-edge label (left label))
+          (display-edge label (right label))
+          (recurse (left label) amount (- kinds-of-coins 1))
+          (recurse (right label) 
+                   (- amount (first-denomination kinds-of-coins))
+                   kinds-of-coins))))
+
+  (begin
+    (display "digraph {")
+    (newline)
+    (recurse "s" amount kinds-of-coins)
+    (newline)
+    (display "}")))
+
+```
 
 Finally, the output of running `(cc-graph 11 5)`, then piping the
 results into GraphViz gives the desired tree: 
 
 {% img /images/blogimg/cc_11_5.png %}
 
+I love this way of visualizing recursion, you can see how the problem
+is reduced into simpler sub-problems, and that there is a distinct
+'shape' to the computation.
+
+There are more than 100 edges in that tree, I would not have wanted to
+do that by hand, all for a measley value of four.
+
 The final value of `(cc 11 5)` is 4, that is, there are 4 ways of
 making change for 11 cents. Unfortunately, this solution doesn't say
 what exact combinations of coins, only that there are four.
 
-There are more than 100 edges in that tree, I would not have wanted to
-do that by hand, all for a measley value of four.
+Just thinking about it, you can make 11 cents with
+
+ - 11 pennies
+ - 6 pennies, 1 nickel
+ - 1 penny, 2 nickels
+ - 1 penny, 1 dime
 
 I would like to generalize `cc-graph` so that I can get a
 visualization of any recursive function in Scheme, this will take more

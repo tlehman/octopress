@@ -6,7 +6,7 @@ comments: true
 categories: [law, politics, open-source, philosophy]
 ---
 
-Just yesterday, President Obama signed an [executive order](http://www.whitehouse.gov/innovationfellows/open-data-initiatives) that requires government agencies to publish their data in "open, machine readable formats":
+Just yesterday, President Obama signed an [executive order](http://www.whitehouse.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government-) that requires government agencies to publish their data in "open, machine readable formats":
 
 > the default state of new and modernized Government information resources shall be open and machine readable. 
 

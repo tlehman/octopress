@@ -50,7 +50,11 @@ Most countries use 1.5, 2 and 1.667. As fractions, these are 3/2, 2/1, 5/3, resp
 
 Since the overwhelming majority of flags use the 3/2 ratio, let us assume for this problem that this is the only ratio that will be used. We can relax this assumption later and make it a parameter of a more general formula.
 
-Also, note that flags are physically made of thread, another simplifying assumption we will make is that all flags are made of the same width thread, and that the thread is evenly spaced.
+Note that flags are physically made of thread, another simplifying assumption we will make is that all flags are made of the same width thread, and that the thread is evenly spaced.
 
-One final assumption we will have to make is how big the flag will be.
+Flags have some terminology, so a few definitions are in order:
+
+ - **Hoist** is the width of the flag (vertical direction)
+ - **Fly** is the length of the flag (horizontal direction)
+
 

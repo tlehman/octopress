@@ -3,10 +3,10 @@ layout: post
 title: "How many possible flags are there?"
 date: 2013-05-11 12:00
 comments: true
-categories: [mathematics, combinatorics, cli]
+categories: [mathematics, combinatorics, cli, vexillology]
 ---
 
-I have been thinking about Mars a lot more lately, and about possible colonization. The [Mars One](http://mars-one.com/) project is a non-governmental not-for-profit organization that is looking to send groups of four people, independent of nationality, to Mars in 2022. 
+I have been thinking about Mars a lot more lately, and about possible colonization. The [Mars One](http://mars-one.com/) project is a non-governmental not-for-profit organization that is looking to send groups of four people, independent of nationality, to Mars in 2023.
 
 One thing that came to mind was independence, just as the early North American settlers declared independence from Great Britain, I think that Martian settlers would eventually declare independence from the countries of Earth, provided they had a sustainable, self-reliant colony. 
 
@@ -14,7 +14,70 @@ As a side effect, the Martian settlers would probably choose a new flag, and the
 
 If we allow for any arbitrary size and aspect ratio, the number is infinite. However, most flags have the same aspect ratio, and their implementation as cloth is usually in fixed sizes. 
 
+Note that flags are physically made of thread, we make the simplifying assumption that all flags are made of the same width thread, and that the thread is evenly spaced.
+
+Flags have some terminology, so a few definitions are in order:
+
+ - **Hoist** is the width of the flag (vertical direction)
+ - **Fly** is the length of the flag (horizontal direction)
+ - **Vexillology** is the "scientific study of the history, symbolism and usage of flags [[1]](http://en.wikipedia.org/wiki/Vexillology)
+
+We will call **H** the number of threads in the vertical direction, and **F** the number of threads in the horizontal direction.
+
+Assuming threads are evenly spaced, we can imagine the **H*F** crossing points on a grid, as in the image below: 
+
+{% img /images/blogimg/flags/close_up.png %}
+
+Each crossing point is either above or below, so there are 2 distinct choices for each of the **H*F** crossing points, that means that there are 2<sup><sup>HF</sup></sup> possible flags, ignoring color.
+
+If we now consider the role of color, imagine that each of the **H+F** threads could have any of **C** distinct colors, then there would be C<sup><sup>(H+F)</sup></sup> possible color combinations.
+
+Since the under/over configuration of the points is independent from the color choices, it follows from the combinatorial principle of products that there are: 
+
+<div markdown=0>
+\[ 2^{HF}C^{(H+F)} \]
+</div>
+
+Possible flags. This is the general solution, now let's find some real-world data and get some more constraints so we can compute some numbers.
+
+Typically there are fixed aspect ratios, and some correlation exists between the height of the flagpole and the hoist/fly.
+
+## Height of the flagpole versus the fly and hoist
+
+
+Using the United States' Deparment of Interior specifications as a model, we can use the following data to get an approximate relation between the height of a ground flag and the hoist/fly of the flag:
+
+
+Ground Flagpoles [[2]](http://www.doi.gov/ofas/asd/upload/Flagsandseals9-25-12-2.pdf)
+
+```
+height (ft)  hoist (ft)    fly (ft)   aspect ratio (hoist/fly)
+30           3.5           6.65       1.9
+40           5.0           9.5        1.9
+50           5.0           9.5        1.9
+60           8.95          17         1.89
+```
+
+Since the aspect ratio is approximately constant (as we would expect), the problem of finding the relation between height and hoist/ration reduces to a one-dimensional linear regression. We now try to find fly as a function of height, which is in the **y** direction:
+
+<div markdown=0>
+\[ f(y) = a + by \]
+</div>
+
+Using the [least squares method](http://en.wikipedia.org/wiki/Least_squares), the values of a and b are found exactly, the above formula becomes:
+
+<div markdown=0>
+\[ f(y) = 0.3105y + (-3.31) \]
+</div>
+
+So given a height **y**, the fly of the flag should be about **(0.31)y - 3.31(ft)**.
+
+
+## Aspect ratios
+
+
 To find the aspect ratios of the current flags of Earth, I found [this](https://en.wikipedia.org/wiki/User:SiBr4/List_of_national_flags_by_aspect_ratio) on wikipedia. I went to the edit view and then copied the wiki source. On Mac OS X, the `pbpaste` command writes the contents of the clipboard to standard out on the command line. On GNU/Linux under Xorg, you can use `xclip -o` to achieve the same thing.
+
 
 So I played around with the data and came up with this one-liner:
 
@@ -48,13 +111,10 @@ So I played around with the data and came up with this one-liner:
 
 Most countries use 1.5, 2 and 1.667. As fractions, these are 3/2, 2/1, 5/3, respectively. Also, one country (Togo in Africa) uses 1.618 = &phi;, the Golden Ratio!
 
-Since the overwhelming majority of flags use the 3/2 ratio, let us assume for this problem that this is the only ratio that will be used. We can relax this assumption later and make it a parameter of a more general formula.
+Since the overwhelming majority of flags use the 1.5 and 2 ratios, let us assume for this problem that these are the only ratios that will be used. Since the United States flag uses the 1.9 ratio, we can approximate it as 2. Just for reference, Russia and China use 1.5 and U.S.A. uses 1.9, and the U.K. uses 2.
 
-Note that flags are physically made of thread, another simplifying assumption we will make is that all flags are made of the same width thread, and that the thread is evenly spaced.
+Colonizers on other planets will initially be close to the ground and spread out. Since residential flags typically range between 15 and 20 feet, we will be safe and assume that the inital flag is 15 feet tall. From our formula, this means that the Fly will be (.3)(15ft) - (3.31ft) = 1.19 ft.
 
-Flags have some terminology, so a few definitions are in order:
+## Number of threads
 
- - **Hoist** is the width of the flag (vertical direction)
- - **Fly** is the length of the flag (horizontal direction)
-
-
+To find the values of **H** and **F**, we need to know the width and spacing of the thread, 

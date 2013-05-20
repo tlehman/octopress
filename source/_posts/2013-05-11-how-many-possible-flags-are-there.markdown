@@ -58,7 +58,7 @@ height (ft)  hoist (ft)    fly (ft)   aspect ratio (hoist/fly)
 60           8.95          17         1.89
 ```
 
-Since the aspect ratio is approximately constant (as we would expect), the problem of finding the relation between height and hoist/ration reduces to a one-dimensional linear regression. We now try to find fly as a function of height, which is in the **y** direction:
+Since the aspect ratio is approximately constant (as we would expect), the problem of finding the relation between height, hoist and fly reduces to a one-dimensional linear regression. We now try to find fly as a function of height, which is in the **y** direction:
 
 <div markdown=0>
 \[ f(y) = a + by \]
@@ -118,3 +118,9 @@ Colonizers on other planets will initially be close to the ground and spread out
 ## Number of threads
 
 To find the values of **H** and **F**, we need to know the width and spacing of the thread, 
+
+
+## Number of Colors Distinguishable by the Human Eye
+
+This number is about 10,000,000 [[3]](http://hypertextbook.com/facts/2006/JenniferLeong.shtml)
+

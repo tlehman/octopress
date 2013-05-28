@@ -38,7 +38,7 @@ Since the under/over configuration of the points is independent from the color c
 \[ 2^{HF}C^{(H+F)} \]
 </div>
 
-Possible flags. This is the general solution, now let's find some real-world data and get some more constraints so we can compute some numbers.
+possible flags. This is the general solution, now let's find some real-world data and get some more constraints so we can compute some numbers. (*Everything following this formula is just finding the values of **H** and **F**, so if you don't care about the research, simplifying assumptions and data-wrangling, you can skip to the end*)
 
 Typically there are fixed aspect ratios, and some correlation exists between the height of the flagpole and the hoist/fly.
 
@@ -109,7 +109,7 @@ So I played around with the data and came up with this one-liner:
    1 2.545
 ```
 
-Most countries use 1.5, 2 and 1.667. As fractions, these are 3/2, 2/1, 5/3, respectively. Also, one country (Togo in Africa) uses 1.618 = &phi;, the Golden Ratio!
+Most countries use 1.5, 2 and 1.667. As fractions, these are 3/2, 2/1, 5/3, respectively. Also, one country (Togo in Africa) uses 1.618 &#8776; &phi;, the Golden Ratio!
 
 Since the overwhelming majority of flags use the 1.5 and 2 ratios, let us assume for this problem that these are the only ratios that will be used. Since the United States flag uses the 1.9 ratio, we can approximate it as 2. Just for reference, Russia and China use 1.5 and U.S.A. uses 1.9, and the U.K. uses 2.
 
@@ -117,10 +117,20 @@ Colonizers on other planets will initially be close to the ground and spread out
 
 ## Number of threads
 
-To find the values of **H** and **F**, we need to know the width and spacing of the thread, 
+To find the values of **H** and **F**, we need to know the width and spacing of the thread, a common size of polyester thread for making flags is [Size 69](http://www.thethreadexchange.com/miva/merchant.mvc?Screen=CTGY&Category_Code=nylon-thread-069), which has a diameter of 0.2921 mm. So, assuming that the threads are all adjacent, the number of threads in the Fly direction will be (1.19ft)/(0.2921 mm) &#8776; 1241.
 
+The number of threads in the Hoist direction (assuming a ratio of 1.5) is 1241*(1.5) &#8776; 1861
 
 ## Number of Colors Distinguishable by the Human Eye
 
-This number is about 10,000,000 [[3]](http://hypertextbook.com/facts/2006/JenniferLeong.shtml)
+This number is about 10,000,000 [[4]](http://hypertextbook.com/facts/2006/JenniferLeong.shtml)
+
+**The number of distinct, 15 foot, 3/2 flags made of size 69 polyester thread is **
+
+<div markdown=0>
+\[ 2^{1861\times1241}(10,000,000)^{1861+1241} \approx 1.19 \times 10^{716943} \]
+</div>
+
+This is a 716,944 digit number, the number of possible flags is so much higher than [the number of atoms in the observable Universe](http://www.wolframalpha.com/input/?i=number+of+particles+in+the+universe) that it isn't even plausible to assume that all of them could ever be exhausted.
+
 

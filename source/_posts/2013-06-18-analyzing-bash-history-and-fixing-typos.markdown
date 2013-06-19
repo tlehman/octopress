@@ -6,7 +6,7 @@ comments: true
 categories: [bash, cli, statistics]
 ---
 
-At the command line, I frequently type things too fast, and typos abound. Since a single character can mean the difference between showing documentation and deleting files (`rm` vs `ri`), so autocorrect is definitely a bad idea in this context.
+At the command line, I frequently type things too fast, and typos abound. A single character can mean the difference between showing documentation and deleting files (`rm` vs `ri`), so autocorrect is definitely a bad idea in this context.
 
 Instead of a generic autocorrect, a better idea is to find the most common mistakes. To do so, I used frequency analysis like in [this post](/blog/2013/01/28/reinventing-the-wheel-or-how-i-learned-to-stop-coding-and-read-the-manpages/) to narrow down what I use most at the shell:
 
@@ -49,6 +49,6 @@ elif [[ $1 =~ 'tb' ]]; then
 elif [[ $1 =~ 'tdiff' ]]; then
   git diff
 fi
-````
+```
 
 So that `gi ts` is no longer a mistake, it means what I meant it to mean. This saves me a few keystrokes, and it is a good example of why scripts in your path are generally better than aliases, since you can have logic in them.

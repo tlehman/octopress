@@ -90,6 +90,7 @@ by going left two times, right two times, and then left.
 
 Here is the full source of the tree-generating code `cc-graph`:
 
+<a name="quasiquote">
 ```scheme
 
 (define (cc-graph amount kinds-of-coins)
@@ -145,6 +146,7 @@ Here is the full source of the tree-generating code `cc-graph`:
     (display "}")))
 
 ```
+</a>
 
 Finally, the output of running `(cc-graph 11 5)`, then piping the
 results into GraphViz gives the desired tree: 

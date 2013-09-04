@@ -67,10 +67,10 @@ Then, recompute the values:
 
 ``` scheme
 (fold-right / 1 (list 1 2 3))
-; => (/ (/ (/ 1 1) 2) 3)
+; => (/ 1 (/ 2 (/ 3 1)))
 
 (fold-left / 1 (list 1 2 3))
-; => (/ 1 (/ 2 (/ 3 1)))
+; => (/ (/ (/ 1 1) 2) 3)
 ```
 
 This expanded view makes it very clear how these functions are different. It also suggests that they are different only for non-associative operators.

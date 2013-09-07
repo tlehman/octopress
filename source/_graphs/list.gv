@@ -1,0 +1,9 @@
+digraph list {
+  rankdir=LR;
+  
+  a[shape=box];
+  b[shape=box];
+  c[shape=box];
+  a -> b -> c;
+}
+

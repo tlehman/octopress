@@ -74,3 +74,5 @@ The next step would be to have a robotic authority above all three [(or four)](/
 
 If I had any intial point at all, it would be: _Legislators should use modern tools for recording changes to laws_.
 
+Then we can get on to replacing them with machines.
+

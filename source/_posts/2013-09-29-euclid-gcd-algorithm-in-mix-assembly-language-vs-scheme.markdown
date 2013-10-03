@@ -26,7 +26,7 @@ little bit of discrete math first, one can see where the steps come
 from.
 
 First, start by assuming that m and n are positive integers, with m > 
-n, and then the greatest common divisor d is the unique largest integer such that:
+n, and then the greatest common divisor d is the unique smallest integer such that:
 
 <div markdown="0">
   \[ \exists a,b \in \mathbb{Z} : am + bn = d  \]

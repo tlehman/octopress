@@ -26,9 +26,9 @@ In trying to understand [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) 
 >      Explosive growth in the number of hosts didn't bode well for
 >      the future.
 
-That is, there used to be a single file that mapped hostnames to IP addresses, and everyone on the internet would fetch that file over ftp to stay up to date with the network.
+That is, there used to be a single file that mapped hostnames to IP addresses, and everyone on the network would fetch that file over ftp to stay up to date with the network.
 
-To explain the quadratic growth (proportional to the square of the number of hosts), suppose there are N hosts on the internet, then for each change that is made in a hostname, N hosts have to download a new copy of the file. That means that if each host in the network makes a change, then for each of those changes, all N of the hosts have to download a new copy, so N&times;N total FTP GETs.
+To explain the quadratic growth (proportional to the square of the number of hosts), suppose there are N hosts on the network, then for each change that is made in a hostname, N hosts have to download a new copy of the file. That means that if each host in the network makes a change, then for each of those changes, all N of the hosts have to download a new copy, so N&times;N total FTP GETs.
 
 If this is incorrect, leave a comment, I'm trying to make sense of the rationale in the quote, but I might be wrong in my assumptions. Namely, if we can assume that once a host picks a name that it will stay constant, then it seems that the rate of growth should be linear, not quadratic.
 

@@ -45,7 +45,7 @@ All we need to show is that there are integers s and t such that
   \[ sn + tr = d  \]
 </div>
 
-Note that since r = m mod n, it follows that r - m is a divisor of n,
+Note that since r = m mod n, it follows that r - m is a multiple of n,
 this means: 
 
 <div markdown="0">

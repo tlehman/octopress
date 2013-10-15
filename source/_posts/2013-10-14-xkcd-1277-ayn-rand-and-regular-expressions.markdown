@@ -49,7 +49,7 @@ You can see in this diagram how the whole expression works:
 
 {% img https://www.debuggex.com/i/CzkCTSvo1uBAYkyi.png %}
 
-``` regex
+``` perl
 /(\b[plurandy]+\b ?){2}/i
 ```
 

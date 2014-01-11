@@ -25,4 +25,4 @@ This proposal would solve the problem of tribal thinking in politics, and make v
 
 I wrote about a [similiar idea in 2012 to solve the problem of choosing the candidate you disliked the least](http://tobilehman.com/blog/2012/09/04/optimize-your-vote-using-statistics/), 
 
-Making people register with parties and then vote only exacerbates this, because they've made a commitment to a tribte before they've made a decision.
+Making people register with parties and then vote only exacerbates this, because they've made a commitment to a tribe before they've made a decision.

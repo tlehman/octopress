@@ -3,7 +3,7 @@ layout: post
 title: "Bootstrapping most of a C dev environment"
 date: 2013-11-25 07:57
 comments: true
-categories: [programming, c, unix]
+categories: [programming, C, unix]
 ---
 
 I've taken a break from SICP and TAOCP in order to get a good foundation in the [C programming language](http://c2.com/cgi/wiki?CeeLanguage), I'm familiar with it, but that is not good enough. The reason is because C exposes a lot more about how the computer works, understanding it is an important first step in understanding computers. Steve Yegge said it well:

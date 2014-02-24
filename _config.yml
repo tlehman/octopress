@@ -56,7 +56,7 @@ default_asides: [asides/recent_posts.html]
 # Liquid-LaTeX plugin
 liquid_latex:
   debug: false
-  density: 150
+  density: 180
   usepackages: pst-all, amsmath
   output_directory: /res/latex
   latex_cmd: "latex -interaction=nonstopmode $texfile &> /dev/null"

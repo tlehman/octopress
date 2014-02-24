@@ -16,6 +16,6 @@ I always used LaTeX to images because it was easier. The image could be embedded
 
 So, here is an awesome example of MathJax in action, displaying some beautiful mathematics: the first Fundamental Theorem of Calculus. We start by assuming a and b are real numbers, and that f is a continuous, real-valued function on the interval `[a,b]`, and further that f is differentiable on the open interval `(a,b)`. The first Fundamental theorem states that:
 
-<div markdown="0">
-  \[ \int_a^b f'(x) dx = f(b) - f(a) \]
-</div>
+{% latex %}
+  $ \int_a^b f'(x) dx = f(b) - f(a) $
+{% endlatex %}

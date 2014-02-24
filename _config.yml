@@ -53,6 +53,17 @@ default_asides: [asides/recent_posts.html]
 # post_asides:
 # page_asides:
 
+# Liquid-LaTeX plugin
+liquid_latex:
+  debug: false
+  density: 150
+  usepackages: pst-all, amsmath
+  output_directory: /res/latex
+  latex_cmd: "latex -interaction=nonstopmode $texfile &> /dev/null"
+  dvips_cmd: "dvips -E $dvifile -o $epsfile &> /dev/null"
+  convert_cmd: "convert -density $density $epsfile $pngfile &> /dev/null"
+  temp_filename: "latex_temp"
+
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #

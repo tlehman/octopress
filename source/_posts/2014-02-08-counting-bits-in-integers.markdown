@@ -59,9 +59,9 @@ Why does `v & (v-1)` clear the least significant bit?
 
 To figure this out, I considered a general n-bit integer, represented in base 2, I thought about it as 
 
-<div markdown="0">
-  \[ v = v_1v_2...v_n \]
-</div>
+{% latex %}
+$ v = v_1v_2...v_n $
+{% endlatex %}
 
 If v is odd, then v<sub>n</sub> = 1, so v-1 simply clears the least significant bit, and since the first n-1 bits are the same, the bitwise AND of v and v-1 is just v-1, which v with the least significant bit set to zero (cleared).
 
@@ -75,26 +75,29 @@ Let v be an n-bit even integer, and v<sub>k</sub>=1 is the least significant bit
 
 We can then write v in the following way:
 
-<div markdown="0">
-  \[ \begin{aligned}
-  v &= v_1v_2v_3...v_kv_{k+1}...v_n  \newline
-    &= v_1v_2v_3...10...0
-\end{aligned}
-\]
-</div>
+{% latex %}
+
+\begin{align}
+  v &= v_1v_2v_3...v_kv_{k+1}...v_n
+\\  &= v_1v_2v_3...10...0
+\end{align}
+
+{% endlatex %}
+
 
 Then, the number v<sub>k</sub>v<sub>k-1</sub>...v<sub>n</sub> = 2<sup>n-k</sup>
 
 We can find v-1 by considering the subproblem of v<sub>k</sub>v<sub>k+1</sub>...v<sub>n</sub> - 1 = 2<sup>n-k</sup>-1.
 
-<div markdown="0">
-  \[ \begin{aligned}
-    &v_k &v_{k+1} &v_{k+1} &... &v_{n-1} &v_n &- 1  \newline
-    &1   &0       &0       &... &0       &0   &- 1  \newline
- =  &0   &1       &1       &... &1       &1
-\end{aligned}
-\]
-</div>
+{% latex %}
+
+\begin{align}
+    &v_k &v_{k+1} &v_{k+1} &... &v_{n-1} &v_n &- 1
+\\  &1   &0       &0       &... &0       &0   &- 1
+\\ =  &0   &1       &1       &... &1       &1
+\end{align}
+ 
+{% endlatex %}
 
 Now, we can see that v and v-1 have the same first k-1 bits, with the last n-k+1 bits opposite, so that the bitwise AND clears the last n-k+1 bits. Since v has the last n-k bits equal to 0 and the k-th bit equal to one, it follows that v&(v-1) clears the least significant bit. This completes the proof.
 

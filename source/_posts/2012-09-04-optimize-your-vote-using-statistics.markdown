@@ -59,18 +59,18 @@ variable X, where X can take on any of the n values {x<sub>1</sub>, ... x<sub>n<
 with corresponding probabilities {p<sub>1</sub>, ... p<sub>n</sub>}, is
 just the sum of those probabilities, times the corresponding value:
 
-<div markdown="0">
-  \[ E(X) = \sum_{i=1}^n p_ix_i \]
-</div>
+{% latex %}
+  $ E(X) = \sum_{i=1}^n p_ix_i $
+{% endlatex %}
 
 So the expected value is a sort of weighted average over all of the
 values the random variable could take on. The part of this I will be
 using is the p<sub>i</sub> factor. Given this definition, there
 naturally follows an "expected maximum", denoted Emax(X).
 
-<div markdown="0">
-  \[ Emax(X) = \max\{ p_ix_i \}_{i=1}^n \]
-</div>
+{% latex %}
+  $ Emax(X) = \max\{ p_ix_i \}_{i=1}^n $
+{% endlatex %}
 
 I make a further modification to
 this model and use the **issues coefficient** c<sub>i</sub>. For example, I was an 83% match with Gary Johnson, so if Johnson is represented by the value x<sub>i</sub>, then c<sub>i</sub> = 0.83.
@@ -78,9 +78,9 @@ this model and use the **issues coefficient** c<sub>i</sub>. For example, I was 
 So, using this model we have two values that need to be accounted
 for before we can decide who to vote for, there is p<sub>i</sub>, which is the probability that the i-th candidate will win, and then there is c<sub>i</sub>, the degree to which the voter agrees with the candidate on the relevant issues. Since we don't know who is going to win, we set all x<sub>i</sub> = 1, and we can ignore that altogether, so the expected maximum becomes:
 
-<div markdown="0">
-  \[ Emax(X) = \max\{ c_ip_i \}_{i=1}^n \]
-</div>
+{% latex %}
+  $ Emax(X) = \max\{ c_ip_i \}_{i=1}^n $
+{% endlatex %}
 
 Now, in my case, I have all of the four c<sub>i</sub> values, but I don't
 have the p<sub>i</sub> values. To find these values, we could start with

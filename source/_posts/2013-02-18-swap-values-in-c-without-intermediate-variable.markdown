@@ -9,21 +9,28 @@ categories: [mathematics, algebra, macros, C]
 Using the following properties of the XOR function:
 
  - Associativity
-<div markdown="0">
-  \[(a \oplus b) \oplus c =  a \oplus (b \oplus c) \]
-</div>
+
+{% latex %}
+  $(a \oplus b) \oplus c =  a \oplus (b \oplus c) $
+{% endlatex %}
+
  - Commutativity
-<div markdown="0">
-  \[a \oplus b =  b \oplus a \]
-</div>
+
+{% latex %}
+  $a \oplus b =  b \oplus a $
+{% endlatex %}
+
 - Identity
-<div markdown="0">
-  \[a \oplus 0 = a \]
-</div>
+
+{% latex %}
+  $a \oplus 0 = a $
+{% endlatex %}
+
 - Self-Inverse
-<div markdown="0">
-  \[a \oplus a = 0 \]
-</div>
+
+{% latex %}
+  $a \oplus a = 0 $
+{% endlatex %}
 
 As a bit of trivia, note that all n-bit integers form an [Abelian Group](http://en.wikipedia.org/wiki/Abelian_group) under XOR. The proof of which can be found by using the obvious isomorphism of n-bit integers with `{0,1}`<sup>n</sup> under addition modulo 2. Note that addition modulo 2 is equivalent to bitwise XOR.
 

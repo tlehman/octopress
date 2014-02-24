@@ -9,9 +9,9 @@ categories: [mathematics, programming, ruby]
 A fixed point of a function  \\( f:S \to S \\) is an element \\(x \in
 S\\) such that 
 
-<div markdown="0">
-\[ f(x) = x \]
-</div>
+{% latex %}
+$ f(x) = x $
+{% endlatex %}
 
 That is, \\(f\\) is a no-op on \\(x\\). Some examples: 
 
@@ -38,18 +38,18 @@ which is exactly the type that is returned by `Fixnum#hash`. So, if we
 let `N` be the set of all `Fixnum` values, and `h` be the hash function,
 then the function 
 
-<div markdown="0">
-\[h: N \to N \]
-</div>
+{% latex %}
+$h: N \to N $
+{% endlatex %}
 
 Does `h` have a fixed point? Let's find out, the generic way to find a
 fixed point is to apply the function over and over and see if any of
 the iterates are the same: 
 
 
-<div markdown="0">
-\[ x, f(x), f(f(x)), f(f(f(x))), f(f(f(f(x)))), ... \]
-</div>
+{% latex %}
+$ x, f(x), f(f(x)), f(f(f(x))), f(f(f(f(x)))), ... $
+{% endlatex %}
 
 In Ruby, we could start with a value `n` and loop until the next step
 is the same as the current step: 

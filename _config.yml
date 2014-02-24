@@ -57,7 +57,7 @@ default_asides: [asides/recent_posts.html]
 liquid_latex:
   debug: false
   density: 180
-  usepackages: pst-all, amsmath
+  usepackages: pst-all, amsmath, amssymb
   output_directory: /res/latex
   latex_cmd: "latex -interaction=nonstopmode $texfile &> /dev/null"
   dvips_cmd: "dvips -E $dvifile -o $epsfile &> /dev/null"

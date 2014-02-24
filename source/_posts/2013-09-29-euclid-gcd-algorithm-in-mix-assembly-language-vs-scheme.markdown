@@ -28,44 +28,44 @@ from.
 First, start by assuming that m and n are positive integers, with m > 
 n, and then the greatest common divisor d is the unique smallest integer such that:
 
-<div markdown="0">
-  \[ \exists a,b \in \mathbb{Z} : am + bn = d  \]
-</div>
+{% latex %}
+  $ \exists a,b \in \mathbb{Z} : am + bn = d  $
+{% endlatex %}
 
 Then, let r = m mod n (the remainder of m divided by n), we will prove
 that 
 
-<div markdown="0">
-  \[ \gcd(m,n) = \gcd(n,r) \]
-</div>
+{% latex %}
+  $ \gcd(m,n) = \gcd(n,r) $
+{% endlatex %}
 
 All we need to show is that there are integers s and t such that 
 
-<div markdown="0">
-  \[ sn + tr = d  \]
-</div>
+{% latex %}
+  $ sn + tr = d  $
+{% endlatex %}
 
 Note that since r = m mod n, it follows that r - m is a multiple of n,
 this means: 
 
-<div markdown="0">
-  \[ \exists k \in \mathbb{Z} \text{ such that }  r-m = kn \]
-</div>
+{% latex %}
+  $ \exists k \in \mathbb{Z} \text{ such that }  r-m = kn $
+{% endlatex %}
 
 Now, we take the integers a,b in the definition of gcd(m,n) above and
 add -ar to both sides of the equation:
 
-<div markdown="0">
-\[ \begin{aligned} 
+{% latex %}
+\begin{align} 
    am + bn & = d \newline
-   am - ar + bn & = d - ar    \newline
-   a(m - r) + bn & = d - ar   \newline
-   kn + bn & = d - ar   \newline
-   (k + b)n & = d - ar   \newline
-   (k + b)n + ar & = d   \newline
-\end{aligned} 
-\]
-</div>
+\\ am - ar + bn & = d - ar  
+\\ a(m - r) + bn & = d - ar 
+\\ kn + bn & = d - ar   
+\\ (k + b)n & = d - ar  
+\\ (k + b)n + ar & = d  
+\end{align} 
+
+{% endlatex %}
 
 It is clear from the last equation above that s = (k+b) and t = a,
 which completes the proof.

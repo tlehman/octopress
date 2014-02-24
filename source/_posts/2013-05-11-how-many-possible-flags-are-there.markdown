@@ -34,9 +34,9 @@ If we now consider the role of color, imagine that each of the **H+F** threads c
 
 Since the under/over configuration of the points is independent from the color choices, it follows from the combinatorial principle of products that there are: 
 
-<div markdown=0>
-\[ 2^{HF}C^{(H+F)} \]
-</div>
+{% latex %}
+$ 2^{HF}C^{(H+F)} $
+{% endlatex %}
 
 possible flags. This is the general solution, now let's find some real-world data and get some more constraints so we can compute some numbers. (*Everything following this formula is just finding the values of **H** and **F**, so if you don't care about the research, simplifying assumptions and data-wrangling, you can skip to the end*)
 
@@ -60,15 +60,15 @@ height (ft)  hoist (ft)    fly (ft)   aspect ratio (hoist/fly)
 
 Since the aspect ratio is approximately constant (as we would expect), the problem of finding the relation between height, hoist and fly reduces to a one-dimensional linear regression. We now try to find fly as a function of height, which is in the **y** direction:
 
-<div markdown=0>
-\[ f(y) = a + by \]
-</div>
+{% latex %}
+$ f(y) = a + by $
+{% endlatex %}
 
 Using the [least squares method](http://en.wikipedia.org/wiki/Least_squares), the values of a and b are found exactly, the above formula becomes:
 
-<div markdown=0>
-\[ f(y) = 0.3105y + (-3.31) \]
-</div>
+{% latex %}
+$ f(y) = 0.3105y + (-3.31) $
+{% endlatex %}
 
 So given a height **y**, the fly of the flag should be about **(0.31)y - 3.31(ft)**.
 
@@ -127,9 +127,9 @@ This number is about 10,000,000 [[4]](http://hypertextbook.com/facts/2006/Jennif
 
 **The number of distinct, 15 foot, 3/2 flags made of size 69 polyester thread is **
 
-<div markdown=0>
-\[ 2^{1861\times1241}(10,000,000)^{1861+1241} \approx 1.19 \times 10^{716943} \]
-</div>
+{% latex %}
+$ 2^{1861\times1241}(10,000,000)^{1861+1241} \approx 1.19 \times 10^{716943} $
+{% endlatex %}
 
 This is a 716,944 digit number, the number of possible flags is so much higher than [the number of atoms in the observable Universe](http://www.wolframalpha.com/input/?i=number+of+particles+in+the+universe) that it isn't even plausible to assume that all of them could ever be exhausted.
 

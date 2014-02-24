@@ -35,17 +35,17 @@ The fact that `(a b c)` can be constructed in either way means that `append` is 
 This leads to the first two properties that define a general monoid, a monoid is:
 
 
-<div markdown="0">
-\[ \text{a set } M \text{ with an associative operation } *:M \times M \to M \] 
-</div>
+{% latex %}
+$ \text{a set } M \text{ with an associative operation } *:M \times M \to M $ 
+{% endlatex %}
 
 Note: the closure property is implicit in the defintion of the operation as a function, since it is impossible for the output of the function to be anything outside of M.
 
 The set M has an identity element e in M, it is defined by:
 
-<div markdown="0">
-\[ \forall m \in M : e*m = m*e = m \]
-</div>
+{% latex %}
+$ \forall m \in M : e*m = m*e = m $
+{% endlatex %}
 
 <hr>
 
@@ -53,13 +53,15 @@ From the three properties that define of monoids (closure, associativity, identi
 
 Suppose `a` and `b` are identity elements, then:
 
-<div markdown="0">
-\[ a*b=b*a=b \]
+{% latex %}
 
-\[ b*a=a*b=a \]
+$ a*b=b*a=b $
 
-\[ a = b \]
-</div>
+$ b*a=a*b=a $
+
+$ a = b $
+
+{% endlatex %}
 
 This applies to all monoids, in our example, the set `M` is the set of all Scheme lists, the operation is `append`, and the unique identity element is the empty list.
 

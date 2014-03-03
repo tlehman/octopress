@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How contract Law might become a form of computing"
+title: "How contract Law could become a form of computing"
 date: 2014-02-23 22:17
 comments: true
 categories: [law, bitcoin]

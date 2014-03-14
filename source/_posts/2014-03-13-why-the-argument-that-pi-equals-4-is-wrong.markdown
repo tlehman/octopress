@@ -64,5 +64,18 @@ One downside to pointwise convergence is that it is possible for a sequence of c
 
 Therefore, even though the sequence of perimeter 4 polygons converged pointwise to a circle, the limit of the permieter, &pi;, does not necessarily equal the perimeter of the limit, 4.
 
-Another kind of convergence, called [uniform convergence](https://en.wikipedia.org/wiki/Uniform_convergence#Definition) does have the properties that the trollface wants, but this sequence does not uniformly converge, the proof of which I will leave to the reader as an exercise.
+~~Another kind of convergence, called [uniform convergence](https://en.wikipedia.org/wiki/Uniform_convergence#Definition) does have the properties that the trollface wants, but this sequence does not uniformly converge, the proof of which I will leave to the reader as an exercise.~~
+
+My explanation by non-uniform convergence is wrong, the property that the f<sub>n</sub> sequence must have is that the first-order derivatives f'<sub>n</sub> must converge, which they don't since each one has corners.
+
+To see why, the definition of curve length of f<sub>n</sub> over an interval [a,b] is:
+
+
+{% latex %} 
+$ \int_a^b \sqrt{1 + (f'_n(t))^2 } dt $
+{% endlatex %}
+
+At each corner point, the derivative f'<sub>n</sub> is not even defined, therefore the derivatives do not converge.
+
+Thank you commenters for pointing this out, and reminding me how important it is to get the details right. I was wrong about that argument being wrong in multiple ways. 
 

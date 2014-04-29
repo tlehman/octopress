@@ -5,6 +5,31 @@
   <li><a href="https://github.com/tlehman" title="@tlehman" rel="me"><img src="/images/icons/github-icon.png"></a></li> 
   <li><a href="https://twitter.com/habitmelon" title="@habitmelon" rel="me"><img src="/images/icons/twitter-icon.png"></a></li>
   <li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+
+  <li>
+    <div style="font-size:16px;margin:0 auto;" class="blockchain-btn"
+         data-address="1PiPpWQ1sNbtCJyL4A7Zdy6EGMKxZUnKoR"
+         data-shared="false">
+        <div class="blockchain stage-begin">
+            <img src="/images/icons/bitcoin-icon.png"/>
+        </div>
+        <div class="blockchain stage-loading" style="text-align:center">
+            <img src="https://blockchain.info//Resources/loading-large.gif"/>
+        </div>
+        <div class="blockchain stage-ready">
+        <br>
+             <p align="center">Please Donate To Bitcoin Address: <b>[[address]]</b></p>
+             <p align="center" class="qr-code"></p>
+        </div>
+        <div class="blockchain stage-paid">
+             Donation of <b>[[value]] BTC</b> Received. Thank You.
+        </div>
+        <div class="blockchain stage-error">
+            <font color="red">[[error]]</font>
+        </div>
+    </div>
+  </li>
+
 </ul>
   {% if site.simple_search %}
 <form action="{{ site.simple_search }}" method="get">

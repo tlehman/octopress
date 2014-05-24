@@ -6,7 +6,7 @@ comments: true
 categories: [probability, politics, law]
 ---
 
-About 9 months ago I wrsote about [NSA bulk spying and how the way the FISA court is being used upsets the balance of powers in the government](/blog/2013/08/13/an-unbalance-of-powers/), the [two](https://www.govtrack.us/congress/bills/113/hr2586) [bills](https://www.govtrack.us/congress/bills/113/hr2761) I referenced have a 4% and 2% chance of being enacted, according to GovTrack. Both of those bills still haven't left the House, and chances are they won't.
+About 9 months ago I wrote about [NSA bulk spying and how the way the FISA court is being used upsets the balance of powers in the government](/blog/2013/08/13/an-unbalance-of-powers/), the [two](https://www.govtrack.us/congress/bills/113/hr2586) [bills](https://www.govtrack.us/congress/bills/113/hr2761) I referenced have a 4% and 2% chance of being enacted, according to GovTrack. Both of those bills still haven't left the House, and chances are they won't.
 
 A more promising bill is the USA FREEDOM Act, which just passed the House:
 

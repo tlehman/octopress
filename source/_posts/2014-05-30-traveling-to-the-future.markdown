@@ -28,8 +28,18 @@ The big thing preventing this from being applied any time soon is energy. It tak
 $ K = \frac{1}{2}mv^2 $
 {% endlatex %}
 
-Assuming the spacecraft has the same mass as the [SpaceX Dragon capsule](http://www.spacex.com/dragon), which is 6,000kg, The energy of motion for traveling at 99.49% the speed of light would be [(1/2)(6000kg)(0.9949*c)<sup>2</sup> = 1.868x10<sup>20</sup>kg m<sup>2</sup> / s<sup>2</sup> ](http://www.wolframalpha.com/input/?i=%281%2F2%29%284200kg%29%280.9949*299%2C792%2C458+m%2Fs%29%5E2) or about 0.44 times the amount of energy consumed by the world in 2001. While that amount of energy is available to humanity, it would need to be carried by the spacecraft, which would add to the mass. The relativistic option may not be possible until humans become a [Type II civilization](https://en.wikipedia.org/wiki/Kardashev_scale).
+Assuming the spacecraft has the same mass as the [SpaceX Dragon capsule](http://www.spacex.com/dragon), which is 6,000kg, The energy of motion for traveling at 99.49% the speed of light would be [(1/2)(6000kg)(0.9949*c)<sup>2</sup> = 1.868x10<sup>20</sup>kg m<sup>2</sup> / s<sup>2</sup> ](http://www.wolframalpha.com/input/?i=%281%2F2%29%284200kg%29%280.9949*299%2C792%2C458+m%2Fs%29%5E2) or about 0.44 times the amount of energy consumed by the world in 2001.
+
+While that amount of energy is available to humanity, it would need to be carried by the spacecraft, which would add to the mass. The relativistic option may not be possible until humans become a [Type II civilization](https://en.wikipedia.org/wiki/Kardashev_scale).
 
 ## Cryonics
 
-The trip to the future using cryonics would require far less energy than the relativistic one. 
+The trip to the future using cryonics would require far less energy than the relativistic one.
+
+All that needs to be done is for a [cryoprotectant](https://en.wikipedia.org/wiki/Cryoprotectant#Conventional_cryoprotectants) (basically, antifreeze) to be flooded through the body so that most of the water molecules have been replaced with the cryoprotectant, then, cool the body to -196&deg;C (Liquid Nitrogen temperature), and wait 200 years.
+
+There may not be a functioning civilization in 200 years, or even if there is, they may not have the technology to undo the effects of being saturated with a cryoprotectant and cooled down to such low temperatures. However, [recent developments in suspended animation of humans to buy time while fixing tissue damage](http://www.newscientist.com/article/mg22129623.000-gunshot-victims-to-be-suspended-between-life-and-death.html#.U4l0FZRdXIU) suggest that this will be possible, and it may happen in less than 200 years.
+
+Either way, as long as there is a stable civilization with a steady supply of liquid nitrogen, people from our time can stay in a suspended state, where the chemistry of life has stopped, until some time later in the future when medical technology is advanced enough to revive them.
+
+

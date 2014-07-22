@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing Unix processes and their parents"
 date: 2012-10-14 12:52
 comments: true
-categories: [unix, programming, graph, dataviz, cli]
+categories: [unix, programming, graph, graphviz, data-visualization, cli]
 ---
 
 I am reading Jesse Storimer's fantastic little book ["Working with Unix Processes"](http://workingwithunixprocesses.com/) right now, and inspiration struck after the second chapter "Processes Have Parents".
@@ -16,7 +16,7 @@ The only process that has no parent is _sched_, it has process id zero. The idea
 ps axo ppid,pid | sed "s/\b / -> /g" | grep -v "PID"
 ```
 
-The first part calls *ps* and gets all process ids, and their parents. Some sample output is this: 
+The first part calls *ps* and gets all process ids, and their parents. Some sample output is this:
 
 ```
 ~ > ps axo ppid,pid
@@ -35,7 +35,7 @@ The first part calls *ps* and gets all process ids, and their parents. Some samp
 This output is piped into *sed* (*s*tream *ed*itor), and the empty space between the numbers is replaced with an arrow "->":
 
 ```
-~ > ps axo ppid,pid | sed "s/\b / -> /g" 
+~ > ps axo ppid,pid | sed "s/\b / -> /g"
  PPID ->   PID
     0 ->     1
     0 ->     2
@@ -49,9 +49,9 @@ This output is piped into *sed* (*s*tream *ed*itor), and the empty space between
 ...
 ```
 
-PPID is Parent Process Id, and PID is just Process Id. Finally, I use _grep -v "PID"_ to let all the lines through that don't contain "PID". This selects those lines that are actual process relations. 
+PPID is Parent Process Id, and PID is just Process Id. Finally, I use _grep -v "PID"_ to let all the lines through that don't contain "PID". This selects those lines that are actual process relations.
 
-In this case, it just chops off the first line. Next, I wanted to convert this into a file that I can feed into [GraphViz](http://www.graphviz.org/), an open source graph visualization tool. The format is pretty simple, an example is in order: 
+In this case, it just chops off the first line. Next, I wanted to convert this into a file that I can feed into [GraphViz](http://www.graphviz.org/), an open source graph visualization tool. The format is pretty simple, an example is in order:
 
 ```
 digraph Foo {
@@ -60,7 +60,7 @@ digraph Foo {
 }
 ```
 
-The above file defines a graph called "Foo" that has three nodes and two edges, it looks like this: 
+The above file defines a graph called "Foo" that has three nodes and two edges, it looks like this:
 
 {% img /images/blogimg/Foo.png %}
 
@@ -72,14 +72,14 @@ We can use _echo "digraph proc { SOME COMMAND }"_ to wrap the output of our comm
 echo "digraph proc { `ps axo ppid,pid | sed "s/\b / -> /g" | grep -v "PID"` } " >> proc.dot
 ```
 
-Finally, GraphViz has several commands for rendering graphs in various ways. The first thing I tried was a symmetric layout, but that produced a hierarchical, *very wide* image. So I tryed *circo* which produces a radial layout: 
+Finally, GraphViz has several commands for rendering graphs in various ways. The first thing I tried was a symmetric layout, but that produced a hierarchical, *very wide* image. So I tryed *circo* which produces a radial layout:
 
-``` sh 
+``` sh
 ~ > echo "digraph proc { `ps axo ppid,pid | sed "s/\b / -> /g" | grep -v "PID"` } " >> proc.dot
 ~ > circo proc.dot -Tpng >> radial_proc.png
 ```
 
-Here's the radial layout: 
+Here's the radial layout:
 {% img /images/blogimg/radial_proc.png %}
 
 You can see the original ancestor of all processes, _sched_ with PID 0 right in the center, then PID 1 which is called _init_ has a bunch of children. I am writing this post in vim in a bash shell in a gnome terminal emulator, the vim PID is 14819, but it is hard to see in this image, there is too much overlap.
@@ -93,4 +93,3 @@ This rendering took *much* longer than circo rendering, but is much nicer (click
 </a>
 
 I remember learning in my C programming class that Unix processes all had to be made with fork. It reminded me of asexual reproduction where two identical copies are made. I look forward to learning more about the Unix process model, and recommend Jesse's book.
-

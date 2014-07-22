@@ -3,12 +3,12 @@ layout: post
 title: "What languages fix: graphically"
 date: 2012-12-26 20:50
 comments: true
-categories: [dataviz, graph, programming]
+categories: [data-visualization, graph, programming]
 ---
 
 Paul Graham's article [What languages fix](http://www.paulgraham.com/fix.html) is about Kevin Kelleher's description of each programming language in terms of the problems with other languages that it fixes. I decided to make this into a graph where each node is a language, and the edge represents the relation "x fixes y".
 
-Here is the list: 
+Here is the list:
 
  - Algol: Assembly language is too low-level.
  - Pascal: Algol doesn't have enough data types.
@@ -25,7 +25,7 @@ Here is the list:
  - C: Assemby language is too low-level.
  - C++: C is too low-level.
  - Java: C++ is a kludge. And Microsoft is going to crush us.
- - C#: Java is controlled by Sun. 
+ - C#: Java is controlled by Sun.
  - Lisp: Turing Machines are an awkward way to describe computation.
  - Scheme: MacLisp is a kludge.
  - T: Scheme has no libraries.

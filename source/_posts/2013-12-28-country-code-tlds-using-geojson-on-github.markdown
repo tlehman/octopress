@@ -3,7 +3,7 @@ layout: post
 title: "Country code TLDs using GeoJSON on Github"
 date: 2013-12-28 17:17
 comments: true
-categories: [dataviz, GIS, standards, networking, vexillology]
+categories: [data-visualization, GIS, standards, networking, vexillology]
 ---
 
 There are more country code top-level domains (ccTLDs) than there are countries, that is because territories such as [Wallis and Futuna](https://en.wikipedia.org/wiki/Wallis_and_Futuna) has the ccTLD `.wf`, even though it's a French territory, not a country.
@@ -15,5 +15,3 @@ To solve the ccTLD→(Country/Territory)  problem, there is this great decoding 
 For the other problem, (Country/Territory)→ccTLD, I made the following map using [GeoJSON](http://geojson.org/)
 
 <script src="https://gist.github.com/tlehman/8166180.js"></script>
-
-

@@ -3,7 +3,7 @@ layout: post
 title: "Visualization of SICP Exercise 1.14"
 date: 2013-04-07 18:17
 comments: true
-categories: [dataviz, sicp, lisp, scheme, programming]
+categories: [graphviz, data-visualization, sicp, lisp, scheme, programming]
 ---
 
 I am currently working my way the [Structure and Interpretation of
@@ -13,12 +13,12 @@ of thinking, here's the problem, and then the exercise.
 
 ## The Problem
 
-How many ways are there to make change of a given amount `a` with the 
+How many ways are there to make change of a given amount `a` with the
 following kinds of coins?
 
  - pennies
  - nickels
- - dimes 
+ - dimes
  - quarters
  - half-dollars
 
@@ -48,7 +48,7 @@ In scheme, the above list could be transliterated as:
 Where `(cc a n)` computes the number of ways of changing amount `a` with `n`
 kinds of coins.
 
-The full code for the `count-change` procedure can be found 
+The full code for the `count-change` procedure can be found
 [here](https://github.com/tlehman/sicp-exercises/blob/master/count-change.scm#L3).
 
 ## The Exercise
@@ -95,7 +95,7 @@ Here is the full source of the tree-generating code `cc-graph`:
 
 (define (cc-graph amount kinds-of-coins)
 
-  (define display-node (lambda (label amount kinds-of-coins) 
+  (define display-node (lambda (label amount kinds-of-coins)
                          (begin
                            (display "  ")
                            (display label)
@@ -104,7 +104,7 @@ Here is the full source of the tree-generating code `cc-graph`:
                            (display "\"];")
                            (newline))))
 
-  (define display-edge (lambda (a b) 
+  (define display-edge (lambda (a b)
                          (begin
                            (display "  ")
                            (display a)
@@ -115,7 +115,7 @@ Here is the full source of the tree-generating code `cc-graph`:
 
   (define base-case (lambda (amount kinds-of-coins)
                       (or (< amount 0)
-                          (= kinds-of-coins 0) 
+                          (= kinds-of-coins 0)
                           (= amount 0))))
 
   (define left (lambda (label)
@@ -134,7 +134,7 @@ Here is the full source of the tree-generating code `cc-graph`:
           (display-edge label (left label))
           (display-edge label (right label))
           (recurse (left label) amount (- kinds-of-coins 1))
-          (recurse (right label) 
+          (recurse (right label)
                    (- amount (first-denomination kinds-of-coins))
                    kinds-of-coins))))
 
@@ -149,7 +149,7 @@ Here is the full source of the tree-generating code `cc-graph`:
 </a>
 
 Finally, the output of running `(cc-graph 11 5)`, then piping the
-results into GraphViz gives the desired tree: 
+results into GraphViz gives the desired tree:
 
 {% img /images/blogimg/cc_11_5.png %}
 

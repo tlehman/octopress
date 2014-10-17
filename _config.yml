@@ -107,7 +107,7 @@ disqus_show_comment_count: false
 google_analytics_tracking_id: UA-33237164-1
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
 
 # Flattr
 flattr_user: tlehman

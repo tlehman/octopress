@@ -12,6 +12,6 @@ __Disclaimer: The views and opinions expressed in this site and blog are my own,
 
 If you would like to contact me, send me an email at `my first name` dot `my last name` at gmail dot com. Or follow me on twitter: [@habitmelon](https://twitter.com/habitmelon)
 
-[My PGP Key](/tobi-lehman-gmail.asc)
+[My PGP Key](/tlehman_pgp.asc)
 
 

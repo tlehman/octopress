@@ -27,7 +27,7 @@ percentage:
     NUMBER TOKPERCENT
 ```
 
-Where `OP_PLUS` and `OP_MINUS` come from `+` and `-`. Also, `TOKDOLLAR` and TOKPERCENT are `$` and `%`.
+Where `OP_PLUS` and `OP_MINUS` come from `+` and `-`. Also, `TOKDOLLAR` and `TOKPERCENT` are `$` and `%`.
 
 Then, below each grammar rule, I added some C code that would be generated if the input matches that rule:
 
@@ -56,3 +56,5 @@ Now, it is true that this is no more powerful than a regular expression, however
 I intend on modifying it to allow nested expressions like `(($2 + 4%) + 4%)`, which 
 would be useful for compound interest calculations. That would be more powerful than 
 regular expressions, meaning it would be at least a [context-free grammar](https://en.wikipedia.org/wiki/Context-free_grammar).
+
+*Update: [In the future, I wrote about implementing this](/blog/2015/01/27/parsing-nested-expressions-using-bison)*

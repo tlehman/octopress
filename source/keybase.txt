@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/tlehman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://tobilehman.com
+  * I am tlehman (https://keybase.io/tlehman) on keybase.
+  * I have a public key with fingerprint 702A 8535 CE1D D733 D885  D431 FD0E 4D25 7D77 5AEB
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.3"
+        },
+        "key": {
+            "fingerprint": "702a8535ce1dd733d885d431fd0e4d257d775aeb",
+            "host": "keybase.io",
+            "key_id": "FD0E4D257D775AEB",
+            "uid": "3912359d3558bb3717dfaae464a9f000",
+            "username": "tlehman"
+        },
+        "merkle_root": {
+            "ctime": 1422658588,
+            "hash": "dafe6c88d4567d4aa1d58e3bcf328181df75c12763367ba19feb1faadf4acc3e901647959bc273c14f1ac68c3635d1ac6e11f6fe26cc4a97d843f1e71ac8f518",
+            "seqno": 144687
+        },
+        "service": {
+            "hostname": "tobilehman.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1422658754,
+    "expire_in": 157680000,
+    "prev": "0cb95a6f24325afb185aa68e518d732449e985cd63e56f910dc7b713019207d5",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owFVkm1oHEUYx++SVmtrzhj9IFpDXSyKnOfOzs7LXg1JahKNILQafItyzs5Lbs3d
+7mV3e2ksAbENIbYFq6ilarEGSz8WFC2iSA39YK2mFIS+gFqKYqySEiW0iqkzMYX2
+28w8v+eZ//95nteaGjMN2X9zj60dHX72fPabGT/Td+zG41ssPxIjVnGLxSuBDFNz
+CllVWkVrUI74LJGFIFoTRkIWXkzWLDF5qy7jJIhCTdkFUoDWaN7gJlkF4YCMa3Fg
+alnEdhhFEHEJhCAQCkqRcCFQwpaucBARhCAmfV2yHCXpNb9aizVLgdCvPV12t9ul
++S7Nd3av17FNiwHoAQciT0CEqO9DAohQjEkXu8xTtm0bMJHxkqW0IstVFhq5VRkP
+VmQpjqJFzzwNDAFcx8GIIkq1IJaUdY5gSmJOqXARJsJlDAhEJfS5gg4FFAhFEAcO
+wRBi4jPgKekDrUEol3EOpWcD7BIPeT53COTAVYBxTDnEEAlzlAAorKSDOdeiiaAu
+VEASHaIKAaodJHIojIw4F1Myau5xPeDS6DZdu2Iu8oP//RV4VNVptThKIx5VdKyc
+prWkaHynIzUDD8uDfmmpTskPQqHHdvVcgUav7QlBbt6Sm2tBLEuBIRDBVHfYNh/J
+ulkF7nuIYeW40EFM+YAixjCV2oSeveO6nvQo4gJDibDygC048QmANvAcmwh0lVOg
+hbIBXTMJBkKWboqlNTqRXb0sk23IXLe8wWxuZuUNzVfWuSN3/QIuD6265YXWMwu/
+gK9/3LNuOzxw79kHFsDgUO9bjZWW2X86nm6RE7meeybXnj60qn3f3u6x3c5txy8u
+y3eOf/BK8VC6eefKLy9Xi19829t+c/uHL89/VR8bO3NpcuvF/dnnLl9Y/UmL/OHu
+ZEXvFLhw59vDR+/4rf/sfEYcmZlofrg0/dT9O947l7vr1vdPZLMb+9d3Hvzdbqzn
+1y1ve3Lb4daTbc0vndvTd2rXp17T9yum3yzk3zh2ckfLHzHdcOBSk5cbx+z05Pgz
+Jzae6pvreff2X2c+n7X/UlPj23fd1//d9J+fzeKj+w8/9Oq2B3cGH/+9tc3qP+9+
+1PHOkbk5a+qJ5x+/aX7vT4/8/Ojrrf8B
+=tH3B
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tlehman
+
+==================================================================

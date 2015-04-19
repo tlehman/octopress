@@ -40,7 +40,42 @@ to die in an accident' is really a statement about P(A | D), that is, the probab
 accident __given that that person is drunk__. We don't know this yet, however, we can figure it out using 
 Bayes' theorem.
 
-## Baye's Theorem
+## Bayes' Theorem
+
+Bayes' Theorem is unusual in that it is extremely useful and easy to prove, but hard to really understand.
+This is something I learned several times in college, but never really understood it's importance until much 
+later. To see how easy to prove it is, we go back to the definition of conditional probability:
+
+{% latex %}
+$P(X|Y) = P(X \cap Y)/P(Y)$
+{% endlatex %}
+
+Where P(X \cap Y) is the probability of X and Y occurring. Since this is true for any pair of events X and Y, 
+we can reverse them and get
+
+{% latex %}
+$P(Y|X) = P(Y \cap X)/P(X)$
+{% endlatex %}
+
+Also, remember that AND is commutative, so that P(X &cap; Y) = P(Y &cap; X), so we can multiply the above two 
+equations by P(Y) and P(X), respectively, to get:
+
+
+{% latex %}
+$P(X|Y)P(Y) = P(X \cap Y) = P(Y \cap X) = P(Y|X)P(X)$
+{% endlatex %}
+
+This relates P(X|Y) to P(Y|X), P(X) and P(Y), we can solve the above equation to get:
+
+{% latex %}
+$P(X|Y) = {P(Y|X)P(X)\over P(Y)}$
+{% endlatex %}
+
+And that's it, we took the definition of conditional probability, did a little algebra, and out popped Bayes' 
+theorem, we can now apply this to the above drunk driving fallacy, and calculate the probability that we are 
+interested in, that is, P(A | D).
+
+
 
 [1] Impaired Driving: Get the Facts *Centers for Disease Control*
 http://www.cdc.gov/Motorvehiclesafety/impaired_driving/impaired-drv_factsheet.html

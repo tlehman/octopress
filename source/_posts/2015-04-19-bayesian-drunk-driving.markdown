@@ -3,7 +3,7 @@ layout: post
 title: "Bayesian Drunk Driving"
 date: 2015-04-19 09:43
 comments: true
-categories: [probability, mathematics, statistics]
+categories: [probability, bayesian, mathematics, statistics]
 ---
 
 Driving drunk is illegal for a good reason, it's way riskier than driving sober. This article isn't about driving drunk 
@@ -27,9 +27,20 @@ If you think something is wrong with that argument, you are right, but it's not 
 intuitively seems wrong, it's because it involves a mistake in conditional probability. To see the mistake, 
 it helps to introduce a litle notation, we will define:
 
- - P(A) to be the probability that a given person will die in a traffic-related accident 
  - P(D) to be the probability that a person is drunk
- - P(A | D)
+ - P(A) to be the probability that a person will die in a traffic-related accident 
+ - P(D | A) _(pronounced probability of D given A)_ is the probability that a person is drunk, given that 
+   there was a death in a traffic-related accident they were in
+
+So using the 2012 CDC data, we can assign 31%, P(D | A) = 0.31. This is that the probability of a drunk 
+driver being involved __given that there was a deadly driving accident__.
+
+The first thing to point out is that the statement that 'sober drivers are twice as likely as drunk drivers 
+to die in an accident' is really a statement about P(A | D), that is, the probability of a deadly driving 
+accident __given that that person is drunk__. We don't know this yet, however, we can figure it out using 
+Bayes' theorem.
+
+## Baye's Theorem
 
 [1] Impaired Driving: Get the Facts *Centers for Disease Control*
-[http://www.cdc.gov/Motorvehiclesafety/impaired_driving/impaired-drv_factsheet.html]
+http://www.cdc.gov/Motorvehiclesafety/impaired_driving/impaired-drv_factsheet.html

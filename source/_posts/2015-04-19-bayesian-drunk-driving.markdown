@@ -42,7 +42,8 @@ Bayes' theorem.
 
 ## Bayes' Theorem
 
-Bayes' Theorem is unusual in that it is extremely useful and easy to prove, but hard to really understand.
+[Bayes' Theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem) is unusual in that it is extremely useful 
+and easy to prove, but hard to really understand.
 This is something I learned several times in college, but never really understood it's importance until much 
 later. To see how easy to prove it is, we go back to the definition of conditional probability:
 
@@ -50,7 +51,7 @@ later. To see how easy to prove it is, we go back to the definition of condition
 $P(X|Y) = P(X \cap Y)/P(Y)$
 {% endlatex %}
 
-Where P(X \cap Y) is the probability of X and Y occurring. Since this is true for any pair of events X and Y, 
+Where P(X &cap; Y) is the probability of X and Y occurring. Since this is true for any pair of events X and Y, 
 we can reverse them and get
 
 {% latex %}
@@ -75,7 +76,24 @@ And that's it, we took the definition of conditional probability, did a little a
 theorem, we can now apply this to the above drunk driving fallacy, and calculate the probability that we are 
 interested in, that is, P(A | D).
 
+{% latex %}
+$P(A|D) = {P(D|A)P(A)\over P(D)}$
+{% endlatex %}
+
+Since we know P(D|A), we just need to find P(A) and P(D). Since the CDC data we are using is annual data,
+we need to take the number of casualties from deadly accidents in the United States for the year of 2012 (33,561)
+and divide by the number of drivers (211,814,830), that gives an estimate of P(A) = 33,561/211,814,830 = 
+0.0001584, which is about 1 in 6,313.
+
+Then, the probability that a driver is drunk P(D) is 
 
 
 [1] Impaired Driving: Get the Facts *Centers for Disease Control*
+<a href="http://www.cdc.gov/Motorvehiclesafety/impaired_driving/impaired-drv_factsheet.html">
 http://www.cdc.gov/Motorvehiclesafety/impaired_driving/impaired-drv_factsheet.html
+</a>
+
+[2] Total licensed drivers *U.S. Department of Transportation Federal Highway Administration*
+<a href="http://www.fhwa.dot.gov/policyinformation/statistics/2012/dl22.cfma">
+http://www.fhwa.dot.gov/policyinformation/statistics/2012/dl22.cfm
+</a>

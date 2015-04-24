@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bayesian Drunk Driving"
-date: 2015-04-19 09:43
+date: 2015-04-23 22:07
 comments: true
 categories: [probability, bayesian, mathematics, statistics]
 ---
@@ -107,8 +107,13 @@ Theorem of total probability](https://en.wikipedia.org/wiki/Law_of_total_probabi
 get:
 
 P(A|D<sup>c</sup>) = (P(A) - P(A|D)P(D))/P(D<sup>c</sup>) = (0.0001584 - 0.0127*0.00387)/(1-0.00387) = .000109, 
-which is about 1 in 9118
+which is about 1 in 9118.
 
+## Conclusion
+
+So the probability of getting in a deadly accident, given that you are drunk is 12.7%, and the probability of getting into 
+a deadly accident, given that you are not drunk is .01%, that means that it is 1165 times more likely that you will get into 
+a deadly accident while drunk.
 
 
 ### References

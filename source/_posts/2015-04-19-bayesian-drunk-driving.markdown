@@ -85,8 +85,33 @@ we need to take the number of casualties from deadly accidents in the United Sta
 and divide by the number of drivers (211,814,830), that gives an estimate of P(A) = 33,561/211,814,830 = 
 0.0001584, which is about 1 in 6,313.
 
-Then, the probability that a driver is drunk P(D) is 
+Next, we need to find the probability that a driver is drunk P(D), we will use the data from the study 
+referenced in [3], and define 'drunk' to be a BAC of &geq; 0.1%. Then P(D) = 0.00387 or about 1 in 258 (more 
+on this calculation in the notes below).
 
+Now that we have:
+   
+   P(D|A) = 0.31 (* probability of a driver being drunk, given they were involved in an accident where someone died *),
+
+   P(A) = 0.0001584 (* probability of a driver being involved in an accident where someone died *), and
+
+   P(D) = 0.00387 (* probability of a driver being drunk *)
+
+We can figure out P(A|D) (* probability of a drunk driver getting into a deadly accident *)
+
+P(A|D) = P(D|A)P(A)/P(D) = (0.31*0.0001584)/0.00387 = 0.0127 (12.7 %)
+
+12.7% is significant, it's only a little better than the chance of dying as Russian Roulette.
+Now, let's compare that to sober driving, we just need to calculate P(A|D<sup>c</sup>). We can use [Kolmogorov's 
+Theorem of total probability](https://en.wikipedia.org/wiki/Law_of_total_probability), shuffle a few terms to 
+get:
+
+P(A|D<sup>c</sup>) = (P(A) - P(A|D)P(D))/P(D<sup>c</sup>) = (0.0001584 - 0.0127*0.00387)/(1-0.00387) = .000109, 
+which is about 1 in 9118
+
+
+
+### References
 
 [1] Impaired Driving: Get the Facts *Centers for Disease Control*
 <a href="http://www.cdc.gov/Motorvehiclesafety/impaired_driving/impaired-drv_factsheet.html">
@@ -97,3 +122,13 @@ http://www.cdc.gov/Motorvehiclesafety/impaired_driving/impaired-drv_factsheet.ht
 <a href="http://www.fhwa.dot.gov/policyinformation/statistics/2012/dl22.cfma">
 http://www.fhwa.dot.gov/policyinformation/statistics/2012/dl22.cfm
 </a>
+
+[3] Probability of arrest while driving under the influence (George A Beitel, Michael C Sharp, William D Glauz)
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1730617/pdf/v006p00158.pdf">
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1730617/pdf/v006p00158.pdf
+</a>
+
+*Notes on [3], we don't technically have P(D), but we do have P(D|A<sub>1</sub>), P(A<sub>1</sub>), 
+and P(A<sub>1</sub>|D), where A<sub>1</sub> is the event that a person is arrested. We can then find
+P(D) = (P(D|A<sub>1</sub>)P(A<sub>1</sub>))/P(A<sub>1</sub>|D) = (0.06&times;0.000374)/0.0058 = 
+.00387*.

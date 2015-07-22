@@ -1,12 +1,12 @@
 ---
 title: About Me
-layout: page
+layout: default
 comments: false
 sharing: false
 footer: true
 ---
 
-I work as a software developer at [Goldstar Events](http://www.goldstar.com/), and I have a B.S. in Mathematics from [Portland State University](http://pdx.edu).
+I work as a software developer at [Goldstar Events](http://www.goldstar.com/), and I have a B.Sc. in Mathematics from [Portland State University](http://pdx.edu).
 
 __Disclaimer: The views and opinions expressed in this site and blog are my own, and in no way reflect those of my employer.__
 

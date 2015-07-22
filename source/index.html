@@ -1,42 +1,26 @@
 ---
 layout: default
-navbar: Blog
+title: "Home"
+comments: false
+sharing: false
+footer: true
 ---
 
-<div class="row">
-  <div class="page-content {% unless site.default_asides == empty and site.blog_index_asides == empty %}col-md-9{% else %}col-md-12{% endunless %}">
-    <div class="blog-index">
-      {% assign index = true %}
-      {% for post in paginator.posts %}
-      {% assign content = post.content %}
-        <article class="post">
-          {% include article.html %}
-        </article>
-      {% endfor %}
-    </div>
+<div id="main" class="container">
+  <div class="col-md-4">
+    I work as a software developer at Goldstar Events
+    and I have a B.Sc. in Mathematics from Portland State University.
 
-    <ul class="pager">
-      {% if paginator.next_page %}
-        <li class="previous"><a href="{{paginator.next_page}}">&larr;&nbsp;Older</a></li>
-      {% else %}
-        <li class="previous disabled"><a href="#">&larr;&nbsp;Older</a></li>
-      {% endif %}
-      <li><a href="/blog/archives">Blog Archives</a></li>
-      {% if paginator.previous_page %}
-        <li class="next"><a href="{{paginator.previous_page}}">Newer&nbsp;&rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a href="#">Newer&nbsp;&rarr;</a></li>
-      {% endif %}
-    </ul>
   </div>
+  <div class="col-md-4">
+    <p>This is a landing page I use to post what I am currently working on and thinking about.</p>
+    
+    <p>All opinions discussed are my own, or more accurately, they are the opinions of the person that wrote the article at that point in time. There are many versions that all go by my name, I am just the latest in that sequence. Always blame the one that is further back in time.</p>
+  </div>
+  <div class="col-md-4">
+    <strong>Activity</strong>
 
-  {% unless site.default_asides == empty and site.blog_index_asides == empty %}
-    <aside class="sidebar col-md-3">
-      {% if site.blog_index_asides.size %}
-        {% include_array blog_index_asides %}
-      {% else %}
-        {% include_array default_asides %}
-      {% endif %}
-    </aside>
-  {% endunless %}
+    <a class="twitter-timeline" href="https://twitter.com/habitmelon" data-widget-id="623955175846219776">Tweets by @habitmelon</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
 </div>

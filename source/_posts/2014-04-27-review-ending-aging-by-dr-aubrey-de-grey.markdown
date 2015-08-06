@@ -8,6 +8,10 @@ categories: [review, biogerontology, books, sens, demography, mathematics]
 
 I just finished reading [Dr. Aubrey de Grey](https://en.wikipedia.org/wiki/Aubrey_de_Grey)'s _Ending Aging:  The Rejuvenation Breakthroughs that Could Reverse Human Aging in Our Lifetime (2007)_, it was an accessible introduction to the biology of aging, and a way that it might be defeated. By default, I am skeptical about anti-aging techniques or claims of some sort of fountain of youth. I've heard de Gray's idea on a podcast, and watched his TED talk. It sounded reasonable, but I wanted to learn more about the science to have a more informed opinion, so I read the book.
 
+<div style="float: right; width: 50%">
+  <img src="/images/books/ending_aging.jpg">
+</div>
+
 The plan is referred to as SENS (Strategies for Engineered Negligible Senescence). After reading the book, I think it is a plausible plan for an approach to reverse the effects of aging. I'll summarize the idea and highlight some things from the book that weren't covered in de Gray's TED talk or podcast interview.
 
 The central assumption of the book is that aging is the accumulation of seven types of damage:

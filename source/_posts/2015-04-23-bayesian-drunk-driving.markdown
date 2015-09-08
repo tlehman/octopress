@@ -99,9 +99,9 @@ Now that we have:
 
 We can figure out P(A|D) (* probability of a drunk driver getting into a deadly accident *)
 
-P(A|D) = P(D|A)P(A)/P(D) = (0.31*0.0001584)/0.00387 = 0.0127 (12.7 %)
+P(A|D) = P(D|A)P(A)/P(D) = (0.31*0.0001584)/0.00387 = 0.0127 (1.27 %)
 
-12.7% is significant, it's only a little better than the chance of dying as Russian Roulette.
+1.27% is not insignificant, it's about half the probability of rolling snake eyes in craps.
 Now, let's compare that to sober driving, we just need to calculate P(A|D<sup>c</sup>). We can use [Kolmogorov's 
 Theorem of total probability](https://en.wikipedia.org/wiki/Law_of_total_probability), shuffle a few terms to 
 get:
@@ -111,8 +111,8 @@ which is about 1 in 9118.
 
 ## Conclusion
 
-So the probability of getting in a deadly accident, given that you are drunk is 12.7%, and the probability of getting into 
-a deadly accident, given that you are not drunk is .01%, that means that it is 1165 times more likely that you will get into 
+So the probability of getting in a deadly accident, given that you are drunk is 1.27%, and the probability of getting into 
+a deadly accident, given that you are not drunk is .01%, that means that it is 127 times more likely that you will get into 
 a deadly accident while drunk.
 
 

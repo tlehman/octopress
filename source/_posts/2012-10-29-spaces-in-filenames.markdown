@@ -3,7 +3,7 @@ layout: post
 title: "Spaces in filenames"
 date: 2012-10-29 20:06
 comments: true
-categories: [opinion, cli]
+categories: [opinion, command-line]
 ---
 
 I don't like spaces in filenames. This trend started when I started playing with the command line on Linux 

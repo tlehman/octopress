@@ -3,7 +3,7 @@ layout: post
 title: "XKCD 1277: Ayn Rand and Regular Expressions"
 date: 2013-10-14 22:09
 comments: true
-categories: [humor, regex, xkcd, cli]
+categories: [humor, regex, xkcd, command-line]
 ---
 
 Randall Munroe of XKCD is brilliant, today's comic is no exception:

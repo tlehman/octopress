@@ -3,7 +3,7 @@ layout: post
 title: "Fixing spaces in filenames"
 date: 2012-11-19 19:18
 comments: true
-categories: [cli, bash, unix]
+categories: [command-line, bash, unix]
 ---
 
 Sorry this has taken so long, I've been working on the [Cryptography Coursera class](https://www.coursera.org/course/crypto), 

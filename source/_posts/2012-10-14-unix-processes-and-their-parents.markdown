@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing Unix processes and their parents"
 date: 2012-10-14 12:52
 comments: true
-categories: [unix, programming, graph, graphviz, data-visualization, cli]
+categories: [unix, programming, graph, graphviz, data-visualization, command-line]
 ---
 
 I am reading Jesse Storimer's fantastic little book ["Working with Unix Processes"](http://workingwithunixprocesses.com/) right now, and inspiration struck after the second chapter "Processes Have Parents".

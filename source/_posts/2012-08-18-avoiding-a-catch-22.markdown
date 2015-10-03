@@ -3,7 +3,7 @@ layout: post
 title: "Avoiding a catch-22"
 date: 2012-08-18 16:50
 comments: true
-categories: [windows, powershell, cli, dotnet]
+categories: [windows, powershell, command-line, dotnet]
 ---
 
 I recently needed to find out if I had a particular version of the .NET

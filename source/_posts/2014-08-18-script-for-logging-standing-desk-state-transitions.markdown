@@ -3,7 +3,7 @@ layout: post
 title: "script for logging standing desk state transitions"
 date: 2014-08-18 14:47
 comments: true
-categories: [cli,data,bash,markov-chains,quantified-self]
+categories: [command-line,data,bash,markov-chains,quantified-self]
 ---
 
 At work I have an adjustible-height desk, that way it can be both a standing or a sitting desk.

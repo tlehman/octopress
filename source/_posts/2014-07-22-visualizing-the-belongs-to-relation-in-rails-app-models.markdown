@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing the 'belongs to' relation in rails app models"
 date: 2014-07-22 16:14
 comments: true
-categories: [graphviz, rails, ruby, cli, data-visualization]
+categories: [graphviz, rails, ruby, command-line, data-visualization]
 ---
 
 When working on rails apps, I usually have to make a mental map of the models and how they interrelate.

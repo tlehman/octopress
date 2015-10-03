@@ -3,7 +3,7 @@ layout: post
 title: "How many possible flags are there?"
 date: 2013-05-11 12:00
 comments: true
-categories: [mathematics, combinatorics, cli, vexillology]
+categories: [mathematics, combinatorics, command-line, vexillology]
 ---
 
 I have been thinking about Mars a lot more lately, and about possible colonization. The [Mars One](http://mars-one.com/) project is a non-governmental not-for-profit organization that is looking to send groups of four people, independent of nationality, to Mars in 2023.

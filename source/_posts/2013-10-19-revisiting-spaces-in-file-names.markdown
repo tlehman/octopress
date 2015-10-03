@@ -3,7 +3,7 @@ layout: post
 title: "Revisiting spaces in file names"
 date: 2013-10-19 17:32
 comments: true
-categories: [cli, bash]
+categories: [command-line, bash]
 ---
 
 I don't like spaces in file names, as I've [written before](/blog/2012/10/29/spaces-in-filenames/), and as I've [tried in vain to fix](/blog/2012/11/19/fixing-spaces-in-filenames/).

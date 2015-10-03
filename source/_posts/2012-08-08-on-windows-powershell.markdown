@@ -3,7 +3,7 @@ layout: post
 title: "On Windows PowerShell"
 date: 2012-08-08 18:27
 comments: true
-categories: [windows, powershell, cli]
+categories: [windows, powershell, command-line]
 ---
 
 If you use both Unix-like and Windows operating systems, then you have
@@ -46,4 +46,4 @@ command-line interfaces on Unix, I wanted to make a mapping from common Unix com
 to PowerShell cmdlets. I know there are already a few [articles](http://windows-powershell-scripts.blogspot.com/2009/06/unix-equivalents-in-powershell.html) about this, but I wanted to make a quick reference table that others could contribute to on GitHub.
 
 
-I give you: [A Unix to PowerShell Rosetta Stone](http://tobilehman.com/cli)
+I give you: [A Unix to PowerShell Rosetta Stone](http://tobilehman.com/command-line)

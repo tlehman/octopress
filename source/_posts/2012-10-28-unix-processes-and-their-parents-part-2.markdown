@@ -3,7 +3,7 @@ layout: post
 title: "Unix Processes and Their Parents Part 2"
 date: 2012-10-28 10:29
 comments: true
-categories: [unix, programming, graph, data-visualization, cli, javascript, sigmajs]
+categories: [unix, programming, graph, data-visualization, command-line, javascript, sigmajs]
 ---
 
 Based on a comment by Mark Essel from [part 1](/blog/2012/10/14/unix-processes-and-their-parents/) I have been trying

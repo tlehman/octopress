@@ -3,7 +3,7 @@ layout: post
 title: "Building command line utilities in Ruby that play well with Unix"
 date: 2012-12-30 17:45
 comments: true
-categories: [cli, unix, programming, ruby] 
+categories: [command-line, unix, programming, ruby] 
 ---
 
 The [Unix pipeline](http://en.wikipedia.org/wiki/Pipeline_%28Unix%29) is a beautiful thing, as long as Standard Input and Standard Output are handled correctly, programs can be kept small and predictable. Getting any sort of complex functionality is simply a matter of composing the appropriate command line utilties via the Unix pipeline.

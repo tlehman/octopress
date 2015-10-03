@@ -3,7 +3,7 @@ layout: post
 title: "git log-display: step backward through your git commits displaying diffs"
 date: 2014-11-28 09:33
 comments: true
-categories: [cli, git]
+categories: [command-line, git]
 ---
 
 When working with git at the command line, I frequently want to see the last changes made to a repository. To see the result of the last commit (diff'd with it's parent commit), you can just type `git show`. Git assumes the `HEAD` pointer and just spits it out:

@@ -1,13 +1,17 @@
 {% if site.googleplus_user %}
-<section class="googleplus{% if site.googleplus_hidden %} googleplus-hidden{% endif %} panel panel-default">
-  <div class="panel-body">
-    <h1>
-      <a href="https://plus.google.com/{{ site.googleplus_user }}?rel=author">
-        <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-        Google+
-      </a>
-    </h1>
-  </div>
-</section>
+					<div class="col-md-4">
+                      <h4>Follow Us Here</h4>
+                      <!-- Place this tag where you want the widget to render. -->
+                      <div class="g-page" data-width="273" data-href="//plus.google.com/u/0/{{ site.googleplus_user}}" data-theme="dark" data-layout="landscape" style="border:0px;" data-rel="publisher"></div>
+
+                      <!-- Place this tag after the last widget tag. -->
+                      <script type="text/javascript">
+                        (function() {
+                          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                          po.src = 'https://apis.google.com/js/platform.js';
+                          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                        })();
+                      </script>
+                    </div>
 {% endif %}
 

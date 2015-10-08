@@ -12,13 +12,13 @@ The question I want to address in this article is whether legislation can help s
 
 The inspiration for this article is this graphic by Libby Isenstein:
 
-<img src="https://pbs.twimg.com/media/COF4FxPUkAEmOkI.jpg:large">
+![Libby Isenstein's infographic on guns](https://pbs.twimg.com/media/COF4FxPUkAEmOkI.jpg)
 
 My methodology is to see if there is a correlation between the number of gun-control-related laws in a state and the number of gun-related deaths. The columns in the above table will each count for up to one point. For example, if a state doesn't require a permit for a gun, it gets 0, and if it does require a permit, it gets 1. For columns related to the difficulty of getting a gun, easy gets 0 points, moderate gets 0.5 points, and difficult gets 1 point.
 
 These points are then added up, and we look at all the states (plus DC), as pairs `(sum of points, gun deaths per 100,000 people)`
 
-<img src="/images/blogimg/guns_output_6_1.png">
+![scatterplot](/images/blogimg/guns_output_6_1.png)
 
 This has a correlation coefficient of 0.52 (1.0 being a perfect fit), what that means is that there is a moderate trend between the degree of gun control and the number of gun-related deaths. It doesn't prove that gun control laws cause fewer gun deaths, but it is at least consistent with that claim. And more importantly, it is evidence against the argument that more widespead access to guns make us all safer.
 
@@ -107,7 +107,7 @@ plt.scatter(df["laws"], df["deaths"])
 Since it looks like a downward trend, let's see how well a linear model fits this data.
 
 
-```python
+<pre><code>
 from sklearn import linear_model
 reg = linear_model.LinearRegression() 
 X = df["laws"].values.reshape((len(df),1))
@@ -115,7 +115,7 @@ y_true = df["deaths"].values.reshape((len(df),1))
 
 reg.fit(X,y_true)
 y_pred = reg.predict(X)
-```
+</code></pre>
 
 
 ```python

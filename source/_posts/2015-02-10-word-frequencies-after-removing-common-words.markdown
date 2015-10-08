@@ -16,7 +16,7 @@ After running `make install`, you should have `words` and `decommonize` in your 
 
  - the U.S. Declaration of Independence:
 
-```
+<pre><code>
 $ words < declaration_of_independence.txt | decommonize  | sort | uniq -c | sort -n | tail
    4 time
    5 among
@@ -28,11 +28,11 @@ $ words < declaration_of_independence.txt | decommonize  | sort | uniq -c | sort
    8 states
    9 laws
   10 people
-```
+</code></pre>
 
  - Sherlock Holmes
 
-```
+<pre><code>
 $ words < doyle_sherlock_holmes.txt | decommonize  | sort | uniq -c | sort -n | tail
  174 think
  175 more
@@ -44,11 +44,11 @@ $ words < doyle_sherlock_holmes.txt | decommonize  | sort | uniq -c | sort -n | 
  288 man
  463 holmes
  466 upon
-```
+</code></pre>
 
  - Working with Unix Processes (by @jstorimer)
 
-```
+<pre><code>
 $ words < working_with_unix_processes.txt | decommonize  | sort | uniq -c | sort -n | tail
   73 signal
   82 system
@@ -60,6 +60,6 @@ $ words < working_with_unix_processes.txt | decommonize  | sort | uniq -c | sort
  146 child
  184 processes
  444 process
-```
+</code></pre>
 
 So `words` breaks up the document into lower-case alphabetic words, then `decommonize` greps out the common words, and `sort` and `uniq -c` are used to count instances of each decommonized word, and then the results are sorted.

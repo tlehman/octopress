@@ -120,17 +120,17 @@ a deadly accident while drunk.
 
 [1] Impaired Driving: Get the Facts *Centers for Disease Control*
 <a href="http://www.cdc.gov/Motorvehiclesafety/impaired_driving/impaired-drv_factsheet.html">
-http://www.cdc.gov/Motorvehiclesafety/impaired_driving/impaired-drv_factsheet.html
+[link]
 </a>
 
 [2] Total licensed drivers *U.S. Department of Transportation Federal Highway Administration*
 <a href="http://www.fhwa.dot.gov/policyinformation/statistics/2012/dl22.cfma">
-http://www.fhwa.dot.gov/policyinformation/statistics/2012/dl22.cfm
+[link]
 </a>
 
 [3] Probability of arrest while driving under the influence (George A Beitel, Michael C Sharp, William D Glauz)
 <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1730617/pdf/v006p00158.pdf">
-http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1730617/pdf/v006p00158.pdf
+[link]
 </a>
 
 *Notes on [3], we don't technically have P(D), but we do have P(D|A<sub>1</sub>), P(A<sub>1</sub>), 

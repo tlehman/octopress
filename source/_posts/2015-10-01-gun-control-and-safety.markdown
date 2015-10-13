@@ -27,13 +27,12 @@ No person should die for no reason. If legislation can help solve this problem (
 For more detail on how to perform the analysis above, see below (requires familiarity with python, or a similar language).
 
 
-```python
+```
 import pandas as pd
 import numpy as np
 df = pd.read_csv("guns.csv")
 df.head()
 ```
-
 
 
 

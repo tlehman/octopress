@@ -13,6 +13,9 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- humans.txt -->
+  <link rel="author" href="humans.txt" />
+
   {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
   <link rel="canonical" href="{{ canonical }}">
   <link href="{{ root_url }}/favicon.png" type="image/png" rel="icon">

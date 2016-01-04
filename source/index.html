@@ -80,8 +80,24 @@ footer: true
       </div>
       {{ site.post }}
       <div id="education" class="list-group">
-        <a class="list-group-item" href="https://github.com/tlehman/goga.me">
-          <img src="/images/icons/github-icon.png"> goga.me (uses Rails, websockets, SVG)
+        <a class="list-group-item" href="https://ocr.pictures">
+          <img src="/images/icons/ocr_pictures.png"> ocr.pictures
+          <br>
+          <sub>
+            This is a web app I wrote in Go that uses a simple HTML5/Javascript interface to upload images.
+            It sends the base64 encoded images to the Google Vision API, the OCR'd text is displayed below the 
+            image when the response is received.
+          </sub>
+        </a>
+
+        <a class="list-group-item" href="https://goga.me">
+          <img src="/images/icons/gogame.png"> goga.me
+          <br>
+          <sub>
+          This is a Go Game I wrote originally in Javascript, but found that it was easier to manage the game state
+          if I had a server and a proper database (PostgreSQL ftw). The backend uses Ruby on Rails, and a websocket 
+          library, the frontend uses SVG and websockets to allow live gameplay.
+          </sub>
         </a>
 
         <a class="list-group-item" href="https://github.com/tlehman/tipcalc">

@@ -20,8 +20,8 @@
                     <a href="{{ root_url }}/blog">Blog</a>
                 </li>
 
-                <li {% if page.navbar == 'Archives' %}class="active"{% endif %}>
-                    <a href="{{ root_url }}/blog/archives">Archives</a>
+                <li {% if page.navbar == 'Contact' %}class="active"{% endif %}>
+                    <a href="{{ root_url }}/contact">Contact</a>
                 </li>
 
             </ul>
@@ -38,8 +38,18 @@
                         <span class="visible-xs">Email</span>
                         <img class="hidden-xs" src="{{ root_url }}/images/email.png" alt="Email">
                     </a>
+                  </li>
+                  {% endif %}
+                  <li>
+                  <a class="subscribe-rss" href="https://twitter.com/habitmelon" title="Twitter">
+                    <img class="hidden-xs" src="{{ root_url }}/images/icons/twitter-icon.png" alt="Twitter">
+                  </a>
                 </li>
-                {% endif %}
+                <li>
+                  <a class="subscribe-rss" href="https://github.com/tlehman" title="@tlehman">
+                    <img class="hidden-xs" src="{{ root_url }}/images/icons/github-icon.png" alt="Github">
+                  </a>
+                  </li>
             </ul>
             {% if site.simple_search %}
                 <form class="navbar-form navbar-right" action="{{ site.simple_search }}" method="GET">

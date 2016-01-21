@@ -7,7 +7,68 @@ footer: true
 ---
 
 <div class="row">
-  <div class="page-content {% unless site.default_asides == empty and site.blog_index_asides == empty %}col-md-9{% else %}col-md-12{% endunless %}">
+  <div class="col-md-4">
+
+    <section class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Projects</h3>
+      </div>
+      {{ site.post }}
+      <div id="education" class="list-group">
+        <a class="list-group-item" href="https://ocr.pictures">
+          <img src="/images/icons/ocr_pictures.png"> ocr.pictures
+          <br>
+          <sub>Web app written in Go that uses an HTML5/Javascript interface to upload images.
+            It sends the base64 encoded images to the Google Vision API, the OCR'd text is displayed below the 
+            image when the response is received.
+          </sub>
+        </a>
+
+        <a class="list-group-item" href="https://goga.me">
+          <img src="/images/icons/gogame.png"> goga.me
+          <br>
+          <sub>
+            Web app Go Game made using Ruby on Rails, 
+            PostgreSQL, HTML5 and JavaScript. It uses a WebSocket to achieve 
+            live game play without the need to refresh the page.
+          </sub>
+        </a>
+
+        <a class="list-group-item" href="https://github.com/tlehman/redis-mass">
+          <img src="/images/icons/github-icon.png"> redis-mass
+          <br>
+          <sub>
+            Command line tool written in Go that converts a file of redis commands into redis protocol format.
+          </sub>
+        </a>
+
+        <a class="list-group-item" href="https://github.com/tlehman/tipcalc">
+          <img src="/images/icons/github-icon.png"> Tip calculator
+          <br>
+          <sub>
+            Tip calculator I wrote using bison and c, it parses and evaluates expressions like ($15.29 + 5%), 
+            and it supports nested additions of percentages, meaning the parser is more powerful than a regular expression.
+          </sub>
+        </a>
+
+        <a class="list-group-item" href="https://github.com/tlehman/crib_calc">
+          <img src="/images/icons/github-icon.png"> Cribbage calculator
+          <br>
+          <sub>
+            
+          </sub>
+        </a>
+
+        <a class="list-group-item" href="https://github.com/tlehman/dist">
+          <img src="/images/icons/github-icon.png"> String distance metrics (uses C)
+        </a>
+
+        <a class="list-group-item" href="https://github.com/tlehman/permutation_groups">
+          <img src="/images/icons/github-icon.png"> permutation_groups
+        </a>
+
+      </div>
+    </section>
 
   </div>
 
@@ -44,6 +105,10 @@ footer: true
       {{ site.post }}
       <div id="education" class="list-group">
 
+        <a class="list-group-item" href="https://www.coursera.org/account/accomplishments/records/F25ZQLVUE8H9">
+          Machine Learning: Regression
+        </a>
+
         <a class="list-group-item" href="https://www.coursera.org/account/accomplishments/records/APBS2U6LGG6H">
           Machine Learning Foundations: A Case Study Approach
         </a>
@@ -71,64 +136,6 @@ footer: true
     </section>
 
   </div>
-
-  <div class="col-md-4">
-
-    <section class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Projects</h3>
-      </div>
-      {{ site.post }}
-      <div id="education" class="list-group">
-        <a class="list-group-item" href="https://ocr.pictures">
-          <img src="/images/icons/ocr_pictures.png"> ocr.pictures
-          <br>
-          <sub>
-            This is a web app I wrote in Go that uses a simple HTML5/Javascript interface to upload images.
-            It sends the base64 encoded images to the Google Vision API, the OCR'd text is displayed below the 
-            image when the response is received.
-          </sub>
-        </a>
-
-        <a class="list-group-item" href="https://goga.me">
-          <img src="/images/icons/gogame.png"> goga.me
-          <br>
-          <sub>
-          This is a Go Game I wrote originally in Javascript, but found that it was easier to manage the game state
-          if I had a server and a proper database (PostgreSQL ftw). The backend uses Ruby on Rails, and a websocket 
-          library, the frontend uses SVG and websockets to allow live gameplay.
-          </sub>
-        </a>
-
-        <a class="list-group-item" href="https://github.com/tlehman/tipcalc">
-          <img src="/images/icons/github-icon.png"> Tip calculator (uses bison, C)
-        </a>
-
-        <a class="list-group-item" href="https://github.com/tlehman/crib_calc">
-          <img src="/images/icons/github-icon.png"> Cribbage calculator (uses C)
-        </a>
-
-        <a class="list-group-item" href="https://github.com/tlehman/dist">
-          <img src="/images/icons/github-icon.png"> String distance metrics (uses C)
-        </a>
-
-        <a class="list-group-item" href="https://github.com/tlehman/words">
-          <img src="/images/icons/github-icon.png"> word utilites (uses Bash)
-        </a>
-
-        <a class="list-group-item" href="https://github.com/tlehman/permutation_groups">
-          <img src="/images/icons/github-icon.png"> permutation_groups
-        </a>
-
-        <a class="list-group-item" href="https://github.com/tlehman/gps_rb">
-          <img src="/images/icons/github-icon.png"> gps_rb (uses Ruby)
-        </a>
-
-      </div>
-    </section>
-
-  </div>
-
   <div class="col-md-4">
     {% include asides/recent_posts.html %}
   </div>

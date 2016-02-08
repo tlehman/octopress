@@ -3,7 +3,7 @@ MAINTAINER Tobi Lehman <mail@tobilehman.com>
 
 # Install dependencies
 RUN apt-get update
-RUN apt-get install -y ruby ruby-dev git build-essential python
+RUN apt-get install -y ruby ruby-dev git build-essential python imagemagick texlive-latex-recommended 
 
 # Set correct local
 RUN locale-gen en_US.UTF-8
@@ -33,6 +33,6 @@ RUN rm -rf /tmp/octopress
 # Use vagrant user for the upcoming tasks
 CMD ["/bin/bash"]
 
-VOLUME "/home/octopress/projects"
+VOLUME "/home/octopress/octopress"
 EXPOSE 4000
-WORKDIR /home/octopress/projects
+WORKDIR /home/octopress/octopress

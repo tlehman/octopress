@@ -1,0 +1,106 @@
+digraph montyhall {
+	rankdir=LR;
+
+	root [label="3 choices"];
+	door1 [label="Door #1"];
+	door2 [label="Door #2"];
+	door3 [label="Door #3"];
+
+	root -> door1;
+	root -> door2;
+	root -> door3;
+	
+	prize11 [label="Prize is behind #1"];
+	prize12 [label="Prize is behind #2"];
+	prize13 [label="Prize is behind #3"];
+
+	prize21 [label="Prize is behind #1"];
+	prize22 [label="Prize is behind #2"];
+	prize23 [label="Prize is behind #3"];
+
+	prize31 [label="Prize is behind #1"];
+	prize32 [label="Prize is behind #2"];
+	prize33 [label="Prize is behind #3"];
+
+	door1 -> prize11;
+	door1 -> prize12;
+	door1 -> prize13;
+	
+	door2 -> prize21;
+	door2 -> prize22;
+	door2 -> prize23;
+
+	door3 -> prize31;
+	door3 -> prize32;
+	door3 -> prize33;
+
+	montyopens121 [label="Monty opens #1"];
+	montyopens131 [label="Monty opens #1"];
+	montyopens112 [label="Monty opens #2"];
+	montyopens132 [label="Monty opens #2"];
+	montyopens113 [label="Monty opens #3"];
+	montyopens123 [label="Monty opens #3"];
+
+	montyopens221 [label="Monty opens #1"];
+	montyopens231 [label="Monty opens #1"];
+	montyopens212 [label="Monty opens #2"];
+	montyopens232 [label="Monty opens #2"];
+	montyopens213 [label="Monty opens #3"];
+	montyopens223 [label="Monty opens #3"];
+
+	montyopens321 [label="Monty opens #1"];
+	montyopens331 [label="Monty opens #1"];
+	montyopens312 [label="Monty opens #2"];
+	montyopens332 [label="Monty opens #2"];
+	montyopens313 [label="Monty opens #3"];
+	montyopens323 [label="Monty opens #3"];
+
+	sl112 [label="Switching loses", color="red"];
+	sw112 [label="Staying wins", color="green"];
+	sl113 [label="Switching loses", color="red"];
+	sw113 [label="Staying wins", color="green"];
+	sl121 [label="Staying loses", color="red"];
+	sw121 [label="Switching wins", color="green"];
+	sl123 [label="Staying loses", color="red"];
+	sw123 [label="Switching wins", color="green"];
+	sl131 [label="Staying loses", color="red"];
+	sw131 [label="Switching wins", color="green"];
+	sl132 [label="Switching wins", color="green"];
+	sl132 [label="Staying loses", color="red"];
+
+	//sl212 [label="Switching loses", color="red"];
+	//sl213 [label="Staying wins", color="green"];
+	//sl221 [label="Switching loses", color="red"];
+	//sl223 [label="Staying wins", color="green"];
+	//sl231 [label="Switching loses", color="red"];
+	//sl232 [label="Staying wins", color="green"];
+
+	//sl312 [label="Switching loses", color="red"];
+	//sl313 [label="Staying wins", color="green"];
+	//sl321 [label="Switching loses", color="red"];
+	//sl323 [label="Staying wins", color="green"];
+	//sl331 [label="Switching loses", color="red"];
+	//sl332 [label="Staying wins", color="green"];
+
+	prize11 -> montyopens112;
+	prize11 -> montyopens113;
+	prize12 -> montyopens121;
+	prize12 -> montyopens123;
+	prize13 -> montyopens131;
+	prize13 -> montyopens132;
+	
+	prize21 -> montyopens212;
+	prize21 -> montyopens213;
+	prize22 -> montyopens221;
+	prize22 -> montyopens223;
+	prize23 -> montyopens231;
+	prize23 -> montyopens232;
+
+	prize31 -> montyopens312;
+	prize31 -> montyopens313;
+	prize32 -> montyopens321;
+	prize32 -> montyopens323;
+	prize33 -> montyopens331;
+	prize33 -> montyopens332;
+
+}

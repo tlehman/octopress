@@ -13,8 +13,21 @@ on **word embeddings**. Word embeddings are mappings from sets of words to vecto
 of the words. These embeddings are learned by programs by scanning through large volumes of text, such as wikipedia articles and royalty-free books, and uses a 
 sliding context to adjust the parameters of the embedding.
 
-The goal is to learn a function $$f : Word \to \mathbb{R}^d$$ so that equations like this hold: $$f(\text{waiter}) - f(\text{man}) + f(\text{woman})  f(\text{waitress}) $$
+The goal is to learn a function `f` from words to vectors such that the following equation holds:
 
+$$ f(\text{waiter}) - f(\text{man}) + f(\text{woman}) = f(\text{waitress}) $$
+
+Using the 'skip-gram' technique in the Mikolov paper, we can get a pretty good function `f`, for details, look at this [tensorflow tutorial](https://www.tensorflow.org/versions/r0.10/tutorials/word2vec/index.html).
+
+I ran the `word2vec_optimized.py` program and generated the word embeddings, and here is a real session from that model:
+
+``` python
+>>> model.analogy('man', 'woman', 'waiter')
+'waitress'
+```
+
+The `word2vec_optimized.py` script ran through all the text, generated the embeddings and then did that calculation up above to find the appropriate analogy. There is a lot more to 
+this that I want to explore, but so far it's been surprising how well this works.
 
 
 # References
